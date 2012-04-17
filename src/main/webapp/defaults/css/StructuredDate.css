@@ -19,6 +19,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
     box-shadow: 3px 3px 4px  #C7CFD4;
     background-color: #E6F4F5; /* Light blue per wireframe */
     padding: 10px;
+	height:14.5em;
 }
 table .cs-structuredDate-popup {
 	width: 615px !important;

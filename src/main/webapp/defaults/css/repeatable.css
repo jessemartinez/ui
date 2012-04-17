@@ -60,7 +60,7 @@ table.cs-repeatable-table td:first-child, table.cs-repeatable-table td:last-chil
 	width:13px;
 }
 td input.cs-repeatable-primary {
-    margin:0 0 0 3px;
+    margin:0 0 0 2px;
     vertical-align:middle;}
 input.cs-repeatable-delete {
     border:none; 

@@ -733,7 +733,7 @@ table.cs-admin-table td.checkbox {
     background-color:#F5F3DC;}
 .list-table {
     border-bottom:0px solid #D2D0D0; 
-    background-color:#FFF;}
+    /*background-color:#FFF;*/}
 .list-table .header {}
 .list-table  .content {
     padding:0 !important;}
