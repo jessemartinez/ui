@@ -75,6 +75,7 @@ var utilitiesTester = function ($) {
         "organization": ["create", "read", "update", "delete", "list"],
         "place": ["create", "read", "update", "delete", "list"],
         "concept": ["create", "read", "update", "delete", "list"],
+        "work": ["create", "read", "update", "delete", "list"],
         "movement": ["create", "read", "update", "delete", "list"],
         "objectexit": ["create", "read", "update", "delete", "list"],
         "objects": ["create", "read", "update", "delete", "list"]
@@ -255,6 +256,7 @@ var utilitiesTester = function ($) {
             "organization",
             "place",
             "concept",
+            "work",
             "cataloging",
             "movement",
             "objectexit",
@@ -276,7 +278,8 @@ var utilitiesTester = function ($) {
             "person",
             "organization",
             "place",
-            "concept"
+            "concept",
+            "work"
         ], recTypes.vocabularies);
     });
     
