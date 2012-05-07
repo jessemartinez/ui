@@ -56,16 +56,12 @@
     "pageBuilderIO": {
         "options": {
             "recordType": "work",
-			"namespace": "work",
-             "schema": [
-                "recordlist",
-                "recordtypes",
-                "namespaces",
-                "work"
-            ],
+            "schema": {
+                 "work": null
+            },
             "pageSpec": {
                 "recordEditor": {
-                    "href": "pages/PlaceTemplate.html",
+                    "href": "pages/WorkTemplate.html",
                     "templateSelector": ".csc-work-template",
                     "targetSelector": ".csc-record-edit-container" 
                 }

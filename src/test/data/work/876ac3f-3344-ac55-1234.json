@@ -22,15 +22,10 @@
         }],
         "authorityid": "6ca3db57-7c96-47b6-b17d",
         "refid": "urn:cspace:core.collectionspace.org:workauthorities:name(work):item:name(WorkDisplayName8673509000000)'Work (Display Name)'",
-		"indexingNotes": "indexing notes go here",
+		"indexingNote": "indexing note goes here",
 		"shortIdentifier": "worktest1",
-		"useFors": [
-			{
-				"_primary": true,
-				"useFor": "Muppets Take Manhattan"
-			}
-		],
 		"source": "other",
+		"sourceNote": "source note goes here",
 		"termStatus": "complete",
 		"publisherGroup": [
 			{
@@ -39,8 +34,8 @@
 				"publisher": "TriStar Pictures"
 			}
 		],
-		"historyNotes": "history notes go here",
-		"scopeNotes": "scope notes go here",
+		"historyNote": "history note goes here",
+		"scopeNote": "scope note goes here",
 		"displayName": "Muppets Take Manhattan (1984)",
 		"medium": "film",
 		"creatorGroup": [

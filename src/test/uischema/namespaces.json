@@ -97,6 +97,38 @@
                 },
                 "type": "object"
             },
+            "work": {
+                "properties": {
+                    "work": {
+                        "type": "object",
+                        "properties": {
+                            "nptAllowed": {
+                                "type": "boolean",
+                                "default": true
+                            }
+                        }
+                    },
+                    "worktest1": {
+                        "type": "object",
+                        "properties": {
+                            "nptAllowed": {
+                                "type": "boolean",
+                                "default": true
+                            }
+                        }
+                    },
+                    "worktest2": {
+                        "type": "object",
+                        "properties": {
+                            "nptAllowed": {
+                                "type": "boolean",
+                                "default": true
+                            }
+                        }
+                    }
+                },
+                "type": "object"
+            },
             "organization": {
                 "properties": {
                     "organization": {

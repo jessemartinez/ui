@@ -71,8 +71,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                                     "afterRender.workTest": function (recordEditor) {
                                         var repeatableField = [
                                             "creatorGroup",
-                                            "publisherGroup",
-                                            "useFors"
+                                            "publisherGroup"
                                         ];
                                         fluid.each(repeatableField, function (repeatableName) {
                                             var found = fluid.find(recordEditor, function (property, name) {

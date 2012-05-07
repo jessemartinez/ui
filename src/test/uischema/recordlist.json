@@ -15,7 +15,8 @@
             "group",
             "location",
             "place",
-            "concept"
+            "concept",
+			"work"
         ],
         "type": "array"
     }
