@@ -1,6 +1,13 @@
 /*  styling repeatable fields  */
 .cs-repeatable {
-    display: inline;
+    display: block;
+}
+.cs-repeatable  input{
+    vertical-align:top;
+}
+.cs-repeatable  .fl-force-left,
+.cs-repeatable  .fl-force-right{
+   float:none;
 }
 .cs-repeatable-repeat .input-textarea  {border:1px solid #C7CFD4;} 
 .content .cs-repeatable-repeat {}
@@ -8,7 +15,8 @@
 .content li.cs-repeatable-repeat select,
 .content li.cs-repeatable-repeat button,
 .content li.cs-repeatable-repeat textarea {
-	float:left;}
+	float:none;
+	display:inline-block;}
 .content li.cs-repeatable-repeat .content input,
 .content li.cs-repeatable-repeat .content select,
 .content li.cs-repeatable-repeat .content button,
@@ -38,11 +46,16 @@ input[type="button"].cs-repeatable-add {
 li.cs-repeatable-repeat {
     list-style-type: none; 
     margin-bottom:1px; 
+	/*width: 95%;*/
+    padding: 0;
+}
+
+li.cs-repeatable-repeat:last-child {
+    margin-bottom: 18px;
 }
 input.cs-repeatable-primary {
     width: 11px; 
-    position: relative; 
-    vertical-align:middle; 
+    /*position: relative;*/
     border:none; 
     margin-right:3px;
     margin-top:2px;
@@ -51,9 +64,8 @@ td input.cs-repeatable-primary {
     margin:0px 2px 0 2px;
     vertical-align:middle;}
 input.cs-repeatable-delete {
-    border:none; 
-    vertical-align:top; 
-    padding:0px;
+    border:none;
+    padding:0;
 	width:16px;
     background:transparent url('../images/icnDeleteIdle.png') no-repeat 2px 3px;
 	}
@@ -79,13 +91,16 @@ table tr.csc-repeatable-repeat input.cs-repeatable-delete[disabled]:focus {
 .cs-repeatable-withSubgroup .cs-repeatable-repeat  {
 	border:1px solid #CCC;
 	background-color:#E2E2E2;
-	float: left;
+	/*float: left;*/
 }
-
+.cs-repeatable-group li.cs-repeatable-repeat{
+	padding:10px 0 0 5px;
+}
 .cs-repeatable-group .cs-repeatable-repeat .cs-repeatable-content,
 .cs-repeatable-group .cs-repeatable-repeat .cs-repeatable-content,
 .cs-repeatable-withSubgroup .cs-repeatable-repeat .cs-repeatable-content {
-	float:left;
+	/*float:left;*/
+	display:inline-block;
 }
 
 .infoGroup { 
@@ -180,22 +195,16 @@ input.cs-autocomplete-input,
 ul.cs-repeatable li.cs-repeatable-repeat input.cs-autocomplete-input,
 ul.cs-repeatable li.cs-repeatable-repeat input.cs-repeatable-content,
 ul.cs-repeatable li.cs-repeatable-repeat textarea.cs-repeatable-content {
-    width: 88.5%;
+    width: 89.5%;
 }
 ul.cs-repeatable li.cs-repeatable-repeat select.cs-repeatable-content {
-    width: auto;
+    /*width: auto;*/
 }
 
 
 textarea.cs-repeatable-content,
 select.cs-repeatable-content {
-    width: 90%;
-}
-
-li.cs-repeatable-repeat {
-    width: 95%;
-    margin-bottom: 18px;
-    padding: 4px 4px 0px;
+    width:auto;
 }
 div.infoGroup li.cs-repeatable-repeat {
     padding: 0px 0px 0px;
@@ -254,7 +263,7 @@ div.info-pair-date li.cs-repeatable-repeat {
 }
 
 div.info-pair-select input.cs-repeatable-add {
-    right: 32px;
+    right: 17px;
 }
 div.info-pair-date input.cs-repeatable-add {
     right: 38px;

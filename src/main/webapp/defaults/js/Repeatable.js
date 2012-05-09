@@ -150,7 +150,6 @@ cspace = cspace || {};
             add: "cs-repeatable-add",
             repeatable: "cs-repeatable",
             repeat: "cs-repeatable-repeat",
-            clearfix: "clearfix",
             "delete": "cs-repeatable-delete",
             primary: "cs-repeatable-primary",
             content: "cs-repeatable-content",
@@ -454,9 +453,8 @@ cspace = cspace || {};
                        .addClass(getStyle("content"))
                        .wrap($("<ul></ul>").addClass(getStyle("repeatable")))
                        .wrap($("<li/>").addClass(getClass("repeat"))
-                                       .addClass(getStyle("clearfix"))
                                        .addClass(getStyle("repeat"))
-                                       .css("display", "inline"))
+                                       .css("display", ""))
                        .parent("li");
         }
     
@@ -467,7 +465,7 @@ cspace = cspace || {};
             var primary = $(that.options.markup.primaryControl).addClass(getClass("primary"))
                                                                .attr("name", "primary-" + that.options.fullPath)
                                                                .prop("disabled", that.options.disablePrimary)
-                                                               .css("display", that.options.hidePrimary ? "none" : "block");
+                                                               .css("display", that.options.hidePrimary ? "none" : "");
             node.prepend(primary);
         }
         if (that.locate("delete").length === 0 && !that.options.disableDelete) {
