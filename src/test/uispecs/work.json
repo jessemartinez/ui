@@ -356,7 +356,7 @@
                         "protoTree": {
                             "expander": {
                                 "tree": {
-                                    ".csc-work-workTermGroup": {
+                                    ".csc-workTermGroup": {
                                         "decorators": [
                                             {
                                                 "func": "cspace.makeRepeatable",
@@ -365,13 +365,13 @@
                                                     "repeatTree": {
                                                         "expander": {
                                                             "tree": {
-                                                                ".csc-work-termType": "${{row}.termType}",
-                                                                ".csc-work-termPrefForLang": "${{row}.termPrefForLang}",
-                                                                ".csc-work-termLanguage": "${{row}.termLanguage}",
-                                                                ".csc-work-termDisplayName": "${{row}.termDisplayName}",
-                                                                ".csc-work-termSourceID": "${{row}.termSourceID}",
-                                                                ".csc-work-termSourceNote": "${{row}.termSourceNote}",
-                                                                ".csc-work-termSource": {
+                                                                ".csc-workAuthority-termType": "${{row}.termType}",
+                                                                ".csc-workAuthority-termPrefForLang": "${{row}.termPrefForLang}",
+                                                                ".csc-workAuthority-termLanguage": "${{row}.termLanguage}",
+                                                                ".csc-workAuthority-termDisplayName": "${{row}.termDisplayName}",
+                                                                ".csc-workAuthority-termSourceID": "${{row}.termSourceID}",
+                                                                ".csc-workAuthority-termSourceNote": "${{row}.termSourceNote}",
+                                                                ".csc-workAuthority-termSource": {
                                                                     "decorators": [
                                                                         {
                                                                             "func": "cspace.termList",
@@ -384,7 +384,7 @@
                                                                         }
                                                                     ]
                                                                 },
-                                                                ".csc-work-termStatus": {
+                                                                ".csc-workAuthority-termStatus": {
                                                                     "default": "",
                                                                     "optionnames": [
                                                                         "Please select a value",
@@ -402,9 +402,9 @@
                                                                     ],
                                                                     "selection": "${{row}.termStatus}"
                                                                 },
-                                                                ".csc-work-termSourceDetail": "${{row}.termSourceDetail}",
-                                                                ".csc-work-termQualifier": "${{row}.termQualifier}",
-                                                                ".csc-work-termName": "${{row}.termName}"
+                                                                ".csc-workAuthority-termSourceDetail": "${{row}.termSourceDetail}",
+                                                                ".csc-workAuthority-termQualifier": "${{row}.termQualifier}",
+                                                                ".csc-workAuthority-termName": "${{row}.termName}"
                                                             },
                                                             "type": "fluid.noexpand"
                                                         }
@@ -413,6 +413,42 @@
                                                 }
                                             }
                                         ]
+                                    },
+                                    ".csc-work-termDisplayName-label": {
+                                        "messagekey": "work-termDisplayNameLabel"
+                                    },
+                                    ".csc-work-termQualifier-label": {
+                                        "messagekey": "work-termQualifierLabel"
+                                    },
+                                    ".csc-work-termType-label": {
+                                        "messagekey": "work-termTypeLabel"
+                                    },
+                                    ".csc-work-termStatus-label": {
+                                        "messagekey": "work-termStatusLabel"
+                                    },
+                                    ".csc-work-termName-label": {
+                                        "messagekey": "work-termNameLabel"
+                                    },
+                                    ".csc-work-termLanguage-label": {
+                                        "messagekey": "work-termLanguageLabel"
+                                    },
+                                    ".csc-work-termPrefForLang-label": {
+                                        "messagekey": "work-termPrefForLangLabel"
+                                    },
+                                    ".csc-work-historicalStatus-label": {
+                                        "messagekey": "work-historicalStatusLabel"
+                                    },
+                                    ".csc-work-termSource-label": {
+                                        "messagekey": "work-termSourceLabel"
+                                    },
+                                    ".csc-work-termSourceDetail-label": {
+                                        "messagekey": "work-termSourceDetailLabel"
+                                    },
+                                    ".csc-work-termSourceID-label": {
+                                        "messagekey": "work-termSourceIDLabel"
+                                    },
+                                    ".csc-work-termSourceNote-label": {
+                                        "messagekey": "work-termSourceNoteLabel"
                                     }
                                 },
                                 "type": "fluid.noexpand"
