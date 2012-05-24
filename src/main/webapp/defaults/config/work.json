@@ -15,7 +15,7 @@
                         "fieldsToIgnore": ["csid", "fields.csid", "fields.shortIdentifier"],
                         "selectors": {
                             "hierarchy": ".csc-work-hierarchy",
-                            "identificationNumber": ".csc-work-displayName"
+                            "identificationNumber": ".csc-workAuthority-termDisplayName"
                         },
                         "selectorsToIgnore": ["recordTraverser", "requiredFields", "identificationNumber", "header", "togglable", "hierarchy"],
                         "components": {
@@ -32,9 +32,13 @@
                 "titleBar": {
                     "type": "cspace.titleBar",
                     "options": {
-                        "fields": [
-                            "fields.displayName"
-                        ]
+                        "fields": [{
+                            "type": "repeatableMatch",
+                            "queryPath": "fields.workTermGroup",
+                            "childPath": "_primary",
+                            "value": true,
+                            "path": "termDisplayName"
+                        }]
                     }
                 },
                 "header": {
