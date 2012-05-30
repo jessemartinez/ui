@@ -2,7 +2,7 @@
     <div class="header">
         <div>&nbsp;</div>
     </div>
-    <div class="content csc-workTermGroup csc-preferredWork-workTermGroup">
+    <div class="content csc-preferredWork-workTermGroup">
         <div class="label csc-preferred-label"></div>
         <div class="info-column">
             <div class="info-pair">
@@ -11,14 +11,16 @@
                         <thead>
                             <tr>
                                 <td><span class="csc-preferredWork-termDisplayName-label label required"></span><span class="required">*</span></td>
+                                <td class="csc-preferredWork-termName-label"></td>
                                 <td class="csc-preferredWork-termQualifier-label"></td>
                                 <td class="csc-preferredWork-termType-label"></td>
                                 <td class="csc-preferredWork-termStatus-label label"></td>
                             </tr>
-                        </thead>                                                        
+                        </thead>
                         <tbody>
                             <tr>
                                 <td><input type="text" class="csc-workAuthority-termDisplayName"/></td>
+                                <td><input type="text" class="csc-workAuthority-termName"/></td>
                                 <td><input type="text" class="csc-workAuthority-termQualifier"/></td>
                                 <td><input type="text" class="csc-workAuthority-termType"/></td>
                                 <td><select class="csc-workAuthority-termStatus input-select"><option value="">Options not loaded</option></select></td>
@@ -41,12 +43,12 @@
                                 <td class="csc-preferredWork-termSourceID-label"></td>
                                 <td class="csc-preferredWork-termSourceNote-label"></td>
                             </tr>
-                        </thead>                                                        
+                        </thead>
                         <tbody>
                             <tr>
                                 <td><input type="text" class="csc-workAuthority-termLanguage"/></td>
                                 <td><input type="checkbox" class="csc-workAuthority-termPrefForLang"/></td>
-                                <td><input type="text" class="csc-workAuthority-termSource"/></td>
+                                <td><select class="csc-workAuthority-termSource input-select"><option value="">Options not loaded</option></select></td>
                                 <td><input type="text" class="csc-workAuthority-termSourceDetail"/></td>
                                 <td><input type="text" class="csc-workAuthority-termSourceID"/></td>
                                 <td><input type="text" class="csc-workAuthority-termSourceNote"/></td>
