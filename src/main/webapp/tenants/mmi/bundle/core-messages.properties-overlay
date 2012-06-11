@@ -33,3 +33,12 @@ login-loginPasswordInstructions: Password must be between 8 and 24 characters.
 login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
+
+#Acquisition
+acquisition-acquisitionExtentLabel: Extent
+acquisition-acquisitionMethodLabel: Method
+acquisition-acquisitionNoteLabel: Acquisition description
+acquisition-acquisitionReferenceNumberLabel: Acquisition Number 
+acquisition-acquisitionReasonLabel: Provenance
+acquisition-mmiAcquisitionDatesLabel: Acquisition date
+acquisition-mmiAccessionDateLabel: Accession date
