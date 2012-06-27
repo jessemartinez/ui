@@ -42,3 +42,13 @@ acquisition-acquisitionReferenceNumberLabel: Acquisition Number
 acquisition-acquisitionReasonLabel: Provenance
 acquisition-mmiAcquisitionDatesLabel: Acquisition date
 acquisition-mmiAccessionDateLabel: Accession date
+
+#Media
+media-isPrimaryLabel: Is primary
+media-isOriginalMediaLabel: Is original media
+media-mediaStatusLabel: Status
+media-descriptionLabel: Notes
+media-filenameLabel: Original file name
+media-rightsHolderLabel: License
+media-titleLabel: Caption
+media-imgThumbLabel: Media file
