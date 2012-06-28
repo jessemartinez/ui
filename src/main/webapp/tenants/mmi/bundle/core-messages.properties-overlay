@@ -52,3 +52,12 @@ media-filenameLabel: Original file name
 media-rightsHolderLabel: License
 media-titleLabel: Caption
 media-imgThumbLabel: Media file
+
+#Person
+person-affiliatedPersonOrgGroupLabel: Affiliated person/organization
+person-affiliatedPersonOrgLabel: Affiliated person/organization
+person-affiliatedPersonOrgTypeLabel: Affiliated person/organization type
+person-lifeSpanLabel: Life span
+person-scopeNoteLabel: Scope notes
+person-orgContactNamesLabel: Organization's contact name
+person-orgFunctionsLabel: Function
