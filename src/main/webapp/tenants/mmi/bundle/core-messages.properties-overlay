@@ -9,7 +9,7 @@ login-current-info: This is the development server for the Museum of the Moving 
 login-current-details:
 login-login-info: To view the CollectionSpace Core tenant, use the login box on the right with the login:
 login-login: admin@movingimage.us
-login-login-pwd:  and password:
+login-login-pwd:
 login-login-pwdValue: Administrator
 login-rologin-info:
 login-rologin:
@@ -61,3 +61,38 @@ person-lifeSpanLabel: Life span
 person-scopeNoteLabel: Scope notes
 person-orgContactNamesLabel: Organization's contact name
 person-orgFunctionsLabel: Function
+
+#Cataloging
+collection-object-administrativeRemarksLabel: Administrative remarks
+collection-object-provenanceLabel: Provenance
+collection-object-initialCatalogingCompletedLabel: Initial cataloging completed
+collection-object-additionalResearchRequiredLabel: Additional research required
+collection-object-artifactClassWorkTypeGroupLabel: Artifact class / Work type
+collection-object-artifactClassLabel: Artifact class
+collection-object-workTypeLabel: Work type
+collection-object-contentEntityGroupLabel: Content entity
+collection-object-contentEntityLabel: Content entity
+collection-object-contentEntityTypeLabel: Content entity type
+collection-object-copyrightStatementLabel: Copyright statement
+collection-object-historicalNoteSourcesLabel: Historical note sources
+collection-object-objectTitleLabel: Object title
+collection-object-mmiMaterialLabel: Material
+collection-object-mmiInscriptionContentLabel: Inscription content
+collection-object-mmiTechniqueLabel: Technique
+collection-object-mmiMeasuredPartLabel: Part
+collection-object-mmiValueLabel: Value
+collection-object-mmiMeasurementUnitLabel: Dimension Unit
+collection-object-mmiValueQualifierLabel: Value Qualifier
+collection-object-mmiValueDateLabel: Date
+collection-object-mmiDimensionGroupLabel: Dimension
+collection-object-mmiDimensionSummaryLabel: Dimension summary
+collection-object-assocProductionGroupLabel: Associated production
+collection-object-assocProductionLabel: Associated production
+collection-object-assocProductionTypeLabel: Associated production type
+collection-object-assocPublicationGroupLabel: Associated publication
+collection-object-assocPublicationLabel: Associated publication
+collection-object-assocPublicationTypeLabel: Associated publication type
+
+#Structured Date
+structuredDate-personDateEarliestSingleRowLabel: Earliest/Single Date Year
+structuredDate-personDateLatestRowLabel: Latest Date Year
