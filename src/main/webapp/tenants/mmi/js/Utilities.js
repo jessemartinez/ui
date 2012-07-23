@@ -388,6 +388,9 @@ fluid.registerNamespace("cspace.util");
             //$(myWCSibling).selectedIndex = 0;
             //$(myWCSibling).prop("selectedIndex",0);
             $(myWCSibling).val($(myWCSibling).first().text());
+
+            //trigger click event on myWTSibling so the new selectedIndex value gets saved
+            $(myWCSibling).change();
         });
     }
 
