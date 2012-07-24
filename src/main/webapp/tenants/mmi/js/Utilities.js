@@ -368,7 +368,8 @@ fluid.registerNamespace("cspace.util");
 
         $(myAC).bind("change", function() {
             //remove all option elements from WC
-            var myWCSibling = $(this).parents("tr.csc-collection-object-artifactClassWorkTypeGroup").find(".csc-object-identification-workType");
+            //var myWCSibling = $(this).parents("tr.csc-collection-object-artifactClassWorkTypeGroup").find(".csc-object-identification-workType");
+            var myWCSibling = $(".csc-object-identification-workType");
             $(myWCSibling).find("option:selected").removeAttr("selected");
 
             //empty the WC element of all terms
@@ -379,7 +380,8 @@ fluid.registerNamespace("cspace.util");
             
             //copy over WC terms from cloned WC list
             var temp = new RegExp(acSelected);
-            $(this).parents("tr.csc-collection-object-artifactClassWorkTypeGroup").find("#myClone option").filter(function() {
+            //$(this).parents("tr.csc-collection-object-artifactClassWorkTypeGroup").find("#myClone option").filter(function() {
+            $("#myClone option").filter(function() {
                 return (temp).test($(this).val());
             }).clone().appendTo($(myWCSibling));
 
