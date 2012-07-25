@@ -357,88 +357,101 @@ fluid.registerNamespace("cspace.util");
         }
     };
 
-    cspace.util.artifactClassChain = function(parentID) {
+    cspace.util.initWorkType = function(mySelected){
+        var myWT = $(".csc-object-identification-workType");
+        //add in terms that match
+        var temp = new RegExp(mySelected);
+        $("#workTypeClone option").filter(function() {
+            return (temp).test($(this).val());
+        }).clone().appendTo($(myWT));
+    };
+
+    cspace.util.artifactClassCheck = function(parentID) {
         var myParentID = "#" + parentID[0].id;
-        var myAC = $(myParentID).find(".csc-object-identification-artifactClass");
+        var myAC = $(".csc-object-identification-artifactClass");
+        var myWT = $(".csc-object-identification-workType");
+        var acSelected = $(myAC).find(":selected").text();
 
         //removes all the strings with a WT listed - "(AC) WT"
         $(myAC).find("option:gt(0)").filter(function() {
             return (/^\(/).test($(this).text());
         }).remove();
 
+        //if 'myWT:option:gt(0):selected' doesn't exist then run initWorkType() with AC 'option:gt(0):selected' element
+        if ($(myWT).find("option:gt(0):selected").length === 0) {
+            cspace.util.initWorkType(acSelected);
+        } 
+
         $(myAC).bind("change", function() {
-            //remove all option elements from WC
-            //var myWCSibling = $(this).parents("tr.csc-collection-object-artifactClassWorkTypeGroup").find(".csc-object-identification-workType");
-            var myWCSibling = $(".csc-object-identification-workType");
-            $(myWCSibling).find("option:selected").removeAttr("selected");
-
             //empty the WC element of all terms
-            $(myWCSibling).empty();
+            var myWT = $(".csc-object-identification-workType");
+            $(myWT).find("option:gt(0)").remove();
 
-            //find the selected AC term
-            var acSelected = $(this).find(":selected").text();
-            
-            //copy over WC terms from cloned WC list
-            var temp = new RegExp(acSelected);
-            //$(this).parents("tr.csc-collection-object-artifactClassWorkTypeGroup").find("#myClone option").filter(function() {
-            $("#myClone option").filter(function() {
-                return (temp).test($(this).val());
-            }).clone().appendTo($(myWCSibling));
+            //update acSelected
+            acSelected = $(this).find("option:selected").text();
+
+            //copy over WC terms from cloned WC list based on acSelected
+            cspace.util.initWorkType(acSelected);
 
             //assigns the first WC option list element as "selected" and set its selectedIndex to 0
-            //$(myWCSibling).find("option:first").attr("selected", "selected");
-            //$(myWCSibling).selectedIndex = 0;
-            //$(myWCSibling).prop("selectedIndex",0);
-            $(myWCSibling).val($(myWCSibling).first().text());
+            $(myWT).val($(myWT).first().text());
 
-            //trigger click event on myWTSibling so the new selectedIndex value gets saved
-            $(myWCSibling).change();
+            //trigger click event on myWT so the new selectedIndex value gets saved
+            $(myWT).change();
         });
     }
 
-    cspace.util.workTypeChain = function(parentID) {
+    cspace.util.workTypeCheck = function(parentID) {
         var myParentID = "#" + parentID[0].id;
-        var myWT = $(myParentID).find(".csc-object-identification-workType");
+        var myAC = $(".csc-object-identification-artifactClass");
+        var myWT = $(".csc-object-identification-workType");
+        var selectedVal = $(myWT).find("option:gt(0):selected").text();
+        var mySelectedWTVal;
+        var mySelectedACVal;
 
-        var mySelectedVal = $(myWT).find(":selected").text();
-        var mySelected;
-
-        if (mySelectedVal.search(/^\(/) > -1){
-            //yes ( - then is WT term = find substring
-            var last = mySelectedVal.search(/\)/);
-            //remove parentheses
-            mySelected = mySelectedVal.substring(1,last);
-        } else {
-            //no ( - then is AC term = use mySelectedVal string 
-            mySelected = mySelectedVal;
-        }
-
-        //removes all the AC terms from the WT list and removes the (AC) strings from the others
-        $(myWT).find("option").each(function() {
-            //find terms lacking a WT and convert them into the default "None" WC value
+        //remove all the AC terms from the WT list and remove the (AC) strings from the others
+        $(myWT).find("option:gt(0)").each(function() {
+            //find terms lacking a WT and remove them
             $(this).filter(function() {
                 return (/^((?!\().)*$/).test($(this).text());
-            }).text($(this).text().replace(/^.*$/, "None"));
+            }).remove();
             
             //remove all "(AC) " strings from what's left
             $(this).text($(this).text().replace(/\(.+\)\s/, ""));
         });
 
         //next, create a hidden dropdown with original WT terms
-        $(myWT).clone().appendTo(myParentID).removeAttr("class").removeAttr("id").attr("id", "myClone").hide();
+        $(myWT).clone().appendTo(myParentID).removeAttr("class").removeAttr("id").attr("id", "workTypeClone").hide();
 
         //remove selected attribute from clone
-        $("#myClone option:selected").removeAttr("selected");
+        $("#workTypeClone option:selected").removeAttr("selected");
 
-        //set the selectedIndex to 0
-        $("#myClone").selectedIndex = 0;
+        //set the selectedIndex to 0 for clone
+        $("#workTypeClone").selectedIndex = 0;
 
-        //remove terms that don't match the selected AC type
-        var temp = new RegExp(mySelected);
-        $(myWT).find("option").filter(function() {
-            var t = !((temp).test($(this).val()));
-            return t;
-        }).remove();
+        //if myWT has no selected value then use AC's
+        if (selectedVal.length === 0) {
+            mySelectedWTVal = $(myAC).find("option:selected").text();
+            mySelectedACVal = mySelectedWTVal;
+        } else { //myWT had a selected value
+            var temp = selectedVal.search(/\)\s/);
+            mySelectedWTVal = selectedVal.substring(temp+2); //include the single space after the (
+            mySelectedACVal = selectedVal.substring(1,temp-1);
+        }
+
+        //empty out myWT
+        $(myWT).find("option:gt(0)").remove();
+
+        //init the shown values for myWT
+        cspace.util.initWorkType(mySelectedACVal);
+
+        //make previously selected option selected again
+        if (selectedVal.length > 0) {
+            var temp = new RegExp(mySelectedWTVal);
+            $(myWT).find("option:gt(0)").filter(function() {
+                return (temp).test($(this).val());
+            }).attr("selected", "selected");
+        }   
     }
 
     cspace.util.getDefaultConfigURL = function (options) {

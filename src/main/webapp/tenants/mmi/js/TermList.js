@@ -84,10 +84,10 @@ cspace = cspace || {};
             that.activestatus = data.activestatus;
             that.events.afterFetch.fire();
             if (that.options.recordType === "cataloging" && that.options.termListType === "artifactClass"){
-                cspace.util.artifactClassChain(that.termListImplContainer);
+                cspace.util.artifactClassCheck(that.termListImplContainer);
             }
             if (that.options.recordType === "cataloging" && that.options.termListType === "workType"){
-                cspace.util.workTypeChain(that.termListImplContainer);
+                cspace.util.workTypeCheck(that.termListImplContainer);
             }
         }, cspace.util.provideErrorCallback(that, termListUrl, "errorFetching"));
     };
