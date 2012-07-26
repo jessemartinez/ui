@@ -66,12 +66,12 @@ collection-object-administrativeRemarksLabel: Administrative remarks
 collection-object-provenanceLabel: Provenance
 collection-object-initialCatalogingCompletedLabel: Initial cataloging completed
 collection-object-additionalResearchRequiredLabel: Additional research required
-collection-object-artifactClassWorkTypeGroupLabel: Artifact class / Work type
 collection-object-artifactClassLabel: Artifact class
 collection-object-workTypeLabel: Work type
 collection-object-contentEntityGroupLabel: Content entity
 collection-object-contentEntityLabel: Content entity
 collection-object-contentEntityTypeLabel: Content entity type
+collection-object-contentEntityNoteLabel: Content entity note
 collection-object-copyrightStatementLabel: Copyright statement
 collection-object-historicalNoteSourcesLabel: Historical note sources
 collection-object-objectTitleLabel: Object title
@@ -85,12 +85,16 @@ collection-object-mmiValueQualifierLabel: Value Qualifier
 collection-object-mmiValueDateLabel: Date
 collection-object-mmiDimensionGroupLabel: Dimension
 collection-object-mmiDimensionSummaryLabel: Dimension summary
-collection-object-assocProductionGroupLabel: Associated production
-collection-object-assocProductionLabel: Associated production
-collection-object-assocProductionTypeLabel: Associated production type
-collection-object-assocPublicationGroupLabel: Associated publication
-collection-object-assocPublicationLabel: Associated publication
-collection-object-assocPublicationTypeLabel: Associated publication type
+collection-object-captionLabel: Caption
+collection-object-objProdEntityGroupLabel: Object production entity
+collection-object-objProdEntityLabel: Object production entity
+collection-object-objProdEntityRoleLabel: Object production role
+collection-object-objProdEntityNoteLabel: Object production note
+collection-object-contentWorkGroupLabel: Content work
+collection-object-contentWorkLabel: Content work
+collection-object-contentWorkTypeLabel: Content work type
+collection-object-contentWorkNoteLabel: Content work note
+
 
 #Structured Date
 structuredDate-personDateEarliestSingleRowLabel: Earliest/Single Date Year
