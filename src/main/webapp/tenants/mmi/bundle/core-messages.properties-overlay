@@ -53,6 +53,9 @@ media-rightsHolderLabel: License
 media-titleLabel: Caption
 media-imgThumbLabel: Media file
 
+#intake
+intake-conditionCheckersOrAssessorsLabel: Condition checker
+
 #Person
 person-affiliatedPersonOrgGroupLabel: Affiliated person/organization
 person-affiliatedPersonOrgLabel: Affiliated person/organization
@@ -60,6 +63,15 @@ person-affiliatedPersonOrgTypeLabel: Affiliated person/organization type
 person-lifeSpanLabel: Life span
 person-orgContactNamesLabel: Organization's contact name
 person-orgFunctionsLabel: Function
+preferredPA-surNameLabel: Surname/ Organization name
+person-birthDateGroupLabel: Birth/ founding date
+person-deathDateGroupLabel: Death/ dissolution date
+person-birthPlaceLabel: Place of birth/ founding
+person-deathPlaceLabel: Place of death/ dissolution
+
+contact-addressPostCodeLabel: Postcode
+contact-addressMunicipalityLabel: City/Town/Municipality
+contact-addressStateOrProvinceLabel: Province/Territory/State
 
 #Cataloging
 collection-object-administrativeRemarksLabel: Administrative remarks
@@ -94,6 +106,16 @@ collection-object-contentWorkGroupLabel: Content work
 collection-object-contentWorkLabel: Content work
 collection-object-contentWorkTypeLabel: Content work type
 collection-object-contentWorkNoteLabel: Content work note
+collection-object-responsibleDepartmentsLabel: Collection category
+collection-object-responsibleDepartmentLabel: Collection category
+collection-object-numberOfObjectsLabel: Extent
+collection-object-distinguishingFeaturesLabel: Description
+collection-object-physicalDescriptionLabel: Format
+collection-object-objectComponentNameLabel: Components description
+collection-object-objectComponentInformationLabel: When
+collection-object-assocOrganizationLabel: Associated entity
+collection-object-assocOrganizationTypeLabel: Associated entity type
+collection-object-assocOrganizationNoteLabel: Associated entity note
 
 
 #Structured Date
