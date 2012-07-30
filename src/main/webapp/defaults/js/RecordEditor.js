@@ -480,7 +480,8 @@ cspace = cspace || {};
         return tree;
     };
     
-    cspace.recordEditor.navigateToFullImage = function (that) {
+    /*cspace.recordEditor.navigateToFullImage = function (that) {*/
+    cspace.recordEditor.recordRenderer.navigateToFullImage = function (that) {
         window.open(that.model.fields.blobs[0].imgOrig, "_blank", fluid.stringTemplate(that.lookupMessage("media-originalMediaOptions"), {
             height: that.options.originalMediaDimensions.height,
             width: that.options.originalMediaDimensions.width,

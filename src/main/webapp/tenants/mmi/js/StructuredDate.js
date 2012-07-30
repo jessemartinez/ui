@@ -763,7 +763,7 @@ cspace = cspace || {};
         resources: {
             template: cspace.resourceSpecExpander({
                 fetchClass: "slowTemplate",
-                url: "%webapp/html/components/StructuredDate.html",
+                url: "%webapp/html/components/StructuredDate-mmi.html",
                 options: {
                     dataType: "html"
                 }
@@ -890,7 +890,7 @@ cspace = cspace || {};
         resources: {
             template: cspace.resourceSpecExpander({
                 fetchClass: "slowTemplate",
-                url: "%webapp/html/components/StructuredDate.html",
+                url: "%webapp/html/components/StructuredDate-mmi.html",
                 options: {
                     dataType: "html"
                 }
