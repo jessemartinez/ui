@@ -7,13 +7,13 @@ login-generalError: We are sorry, an error has occurred. Please try again, or co
 login-current: Current Release 2.4 Information
 login-current-info: This is the development server for the Museum of the Moving Image's CollectionSpace instance
 login-current-details:
-login-login-info: To view the CollectionSpace Core tenant, use the login box on the right with the login:
-login-login: admin@movingimage.us
-login-login-pwd:
-login-login-pwdValue: Administrator
+login-login-info: 
+login-login: 
+login-login-pwd: 
+login-login-pwdValue: 
 login-rologin-info:
-login-rologin:
-login-rologin-pwd:
+login-rologin: 
+login-rologin-pwd: 
 login-rologin-pwdValue:
 login-footerFirst:
 login-footerLink:
