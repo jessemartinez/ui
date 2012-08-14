@@ -116,6 +116,7 @@ collection-object-objectComponentInformationLabel: When
 collection-object-assocOrganizationLabel: Associated entity
 collection-object-assocOrganizationTypeLabel: Associated entity type
 collection-object-assocOrganizationNoteLabel: Associated entity note
+collection-object-formatLabel: Format
 
 
 #Structured Date
