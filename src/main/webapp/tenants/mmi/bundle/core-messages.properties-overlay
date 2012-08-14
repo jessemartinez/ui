@@ -61,13 +61,13 @@ vocab-person: Local Entities
 person: Entity
 person-personNameAuthorityInformationLabel: Entity Information
 person-preferredPersonLabel: Entity Term Group(s)
-person-affiliatedPersonOrgGroupLabel: Affiliated person/organization
-person-affiliatedPersonOrgLabel: Affiliated person/organization
-person-affiliatedPersonOrgTypeLabel: Affiliated person/organization type
+person-affiliatedPersonOrgGroupLabel: Affiliated entity
+person-affiliatedPersonOrgLabel: Affiliated entity
+person-affiliatedPersonOrgTypeLabel: Affiliated entity type
 person-lifeSpanLabel: Life span
-person-orgContactNamesLabel: Organization's contact name
+person-orgContactNamesLabel: Entity's contact name
 person-orgFunctionsLabel: Function
-preferredPA-surNameLabel: Surname/ Organization name
+preferredPA-surNameLabel: Surname/ Entity name
 person-birthDateGroupLabel: Birth/ founding date
 person-deathDateGroupLabel: Death/ dissolution date
 person-birthPlaceLabel: Place of birth/ founding
@@ -82,6 +82,7 @@ collection-object-administrativeRemarksLabel: Administrative remarks
 collection-object-provenanceLabel: Provenance
 collection-object-initialCatalogingCompletedLabel: Initial cataloging completed
 collection-object-additionalResearchRequiredLabel: Additional research required
+collection-object-approvedByCuratorLabel: Approved by curator
 collection-object-artifactClassLabel: Artifact class
 collection-object-workTypeLabel: Work type
 collection-object-contentEntityGroupLabel: Content entity
@@ -126,3 +127,6 @@ collection-object-formatLabel: Format
 #Structured Date
 structuredDate-personDateEarliestSingleRowLabel: Earliest/Single Date Year
 structuredDate-personDateLatestRowLabel: Latest Date Year
+
+#Footer
+footer-text1: 2009 - 2012
