@@ -57,6 +57,10 @@ media-imgThumbLabel: Media file
 intake-conditionCheckersOrAssessorsLabel: Condition checker
 
 #Person
+vocab-person: Local Entities
+person: Entity
+person-personNameAuthorityInformationLabel: Entity Information
+person-preferredPersonLabel: Entity Term Group(s)
 person-affiliatedPersonOrgGroupLabel: Affiliated person/organization
 person-affiliatedPersonOrgLabel: Affiliated person/organization
 person-affiliatedPersonOrgTypeLabel: Affiliated person/organization type
