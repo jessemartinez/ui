@@ -478,8 +478,8 @@ cspace = cspace || {};
         if (!node.is("tr")) {
             return;
         }
-        primary.wrap("<td/>");
-        remove.wrap("<td/>");
+        primary.wrap("<td class='primary' />");
+        remove.wrap("<td class='remove' />");
         var headerRow = that.locate("headerRow");
         if (headerRow.length < 1) {
             return;

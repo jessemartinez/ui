@@ -122,6 +122,9 @@ collection-object-assocOrganizationLabel: Associated entity
 collection-object-assocOrganizationTypeLabel: Associated entity type
 collection-object-assocOrganizationNoteLabel: Associated entity note
 collection-object-formatLabel: Format
+collection-object-updatedAtLabel: Modified Date
+collection-object-updatedAtStartLabel: Earliest
+collection-object-updatedAtEndLabel: Latest
 
 
 #Structured Date
