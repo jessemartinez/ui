@@ -103,6 +103,15 @@ cspace.tests.sampleSchema = {
                                 "default": true
                             }
                         }
+                    },
+                    "ulan_pa": {
+                        "properties": {
+                            "nptAllowed": {
+                                "default": false,
+                                "type": "boolean"
+                            }
+                        },
+                        "type": "object"
                     }
                 },
                 "type": "object"
@@ -355,6 +364,9 @@ fluid.defaults("cspace.tests.testEnvironment", {
                 permissions: "{testEnvironment}.options.permissions"
             }
         },
+        navigationEventHolder: {
+            type: "cspace.navigationEventHolder"
+        },
         relationResolver: {
             type: "cspace.util.relationResolver"
         },
@@ -371,10 +383,10 @@ fluid.defaults("cspace.tests.testEnvironment", {
             type: "cspace.globalBundle"
         },
         globalNavigator: {
-            type: "cspace.util.globalNavigator",
+            type: "cspace.util.globalNavigator"
         },
         userLogin: {
-            type: "cspace.util.login",
+            type: "cspace.util.login"
         },
         recordTypes: {
             type: "cspace.recordTypes",
