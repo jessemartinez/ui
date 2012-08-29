@@ -44,7 +44,7 @@ var createNewTester = function ($) {
     createNewTest.asyncTest("All headers and records shown", function () {
         var callback = function (createNewPage) {
             jqUnit.assertEquals("Number of headers shown:", 3, createNewPage.locate("categoryHeader").length);
-            jqUnit.assertEquals("Number of records shown ", 8, $(".csc-createNew-recordRadio", createNewPage.container).length);
+            jqUnit.assertEquals("Number of records shown ", 9, $(".csc-createNew-recordRadio", createNewPage.container).length);
             //styling:
             assertStyling(createNewPage, createNewPage.options.styles.totalOf3);
             start();
@@ -92,6 +92,7 @@ var createNewTester = function ($) {
     lessCategories.organization = [];
     lessCategories.place = [];
     lessCategories.concept = [];
+    lessCategories.work = [];
     
     var createNewTestOneCategories = cspace.tests.testEnvironment({
         testCase: bareCreateNewTest,
