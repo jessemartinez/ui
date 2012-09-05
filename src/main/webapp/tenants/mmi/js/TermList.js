@@ -83,6 +83,7 @@ cspace = cspace || {};
             that.optionlist = data.optionlist;
             that.activestatus = data.activestatus;
             that.events.afterFetch.fire();
+            //MMI specific trigger
             if (that.options.recordType === "cataloging" && that.options.termListType === "artifactClass"){
                 cspace.util.artifactClassCheck(that.termListImplContainer);
             }

@@ -660,7 +660,7 @@ cspace = cspace || {};
             },
             updateScalarValues: {
                 funcName: "cspace.structuredDate.popup.updateScalarValues",
-                args: ["{arguments}.0", "{arguments}.2", "{popup}.applier", "{popup}.composeElPath", "{popup}.refreshView","{popup}.options.defaultFormat", "{popup}.options.displayScalars"]
+                args: ["{arguments}.0", "{arguments}.2", "{popup}"]
             }
         },
         defaultFormat: "yyyy-MM-dd",
@@ -786,7 +786,7 @@ cspace = cspace || {};
             },
             updateScalarValues: {
                 funcName: "cspace.workStructuredDate.popup.updateScalarValues",
-                args: ["{arguments}.0", "{arguments}.2", "{popup}.applier", "{popup}.composeElPath", "{popup}.refreshView","{popup}.options.defaultFormat", "{popup}.options.displayScalars"]
+                args: ["{arguments}.0", "{arguments}.2", "{popup}"]
             }
         },
         defaultFormat: "yyyy-MM-dd",
@@ -913,7 +913,7 @@ cspace = cspace || {};
             },
             updateScalarValues: {
                 funcName: "cspace.catalogingStructuredDate.popup.updateScalarValues",
-                args: ["{arguments}.0", "{arguments}.2", "{popup}.applier", "{popup}.composeElPath", "{popup}.refreshView","{popup}.options.defaultFormat", "{popup}.options.displayScalars"]
+                args: ["{arguments}.0", "{arguments}.2", "{popup}"]
             }
         },
         defaultFormat: "yyyy-MM-dd",
@@ -1041,7 +1041,7 @@ cspace = cspace || {};
             },
             updateScalarValues: {
                 funcName: "cspace.personStructuredDate.popup.updateScalarValues",
-                args: ["{arguments}.0", "{arguments}.2", "{popup}.applier", "{popup}.composeElPath", "{popup}.refreshView","{popup}.options.defaultFormat", "{popup}.options.displayScalars"]
+                args: ["{arguments}.0", "{arguments}.2", "{popup}"]
             }
         },
         defaultFormat: "yyyy-MM-dd",
@@ -1119,7 +1119,15 @@ cspace = cspace || {};
                            setDate(secondYear, firstMonth || secondMonth, firstDay || secondDay, earliest);
     };
 
-    cspace.structuredDate.popup.updateScalarValues = function (model, changeRequest, applier, composeElPath, refreshView, defaultFormat, displayScalars) {
+    cspace.structuredDate.popup.updateScalarValues = function (model, changeRequest, popup) {
+        if (!popup) {
+            return;
+        }
+        var applier = popup.applier,
+            composeElPath = popup.composeElPath,
+            refreshView = popup.refreshView,
+            defaultFormat = popup.options.defaultFormat,
+            displayScalars = popup.options.displayScalars;
         // Login is based on:
         // http://wiki.collectionspace.org/display/collectionspace/Date+Schema+Computations
         var eScalarValuePath = composeElPath("dateEarliestScalarValue"),
