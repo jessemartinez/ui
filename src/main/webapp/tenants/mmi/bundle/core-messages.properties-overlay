@@ -4,7 +4,7 @@ login-emailRequired: You must enter a valid email address
 login-passwordsMustMatch: Passwords must match
 login-invalid: Invalid email/password combination
 login-generalError: We are sorry, an error has occurred. Please try again, or contact your system administrator.
-login-current: Current Release 2.4 Information
+login-current: Current Release 2.6 Information
 login-current-info: Welcome to the development server for the Museum of the Moving Image's CollectionSpace instance. Please log in with the username and password provided by your system administrator.
 login-current-details:
 login-login-info: 
