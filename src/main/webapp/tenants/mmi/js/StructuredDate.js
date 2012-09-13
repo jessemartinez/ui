@@ -68,6 +68,7 @@ cspace = cspace || {};
             }
         }
     });
+
     fluid.defaults("cspace.workStructuredDate", {
         gradeNames: ["fluid.rendererComponent", "autoInit"],
         preInitFunction: "cspace.workStructuredDate.preInit",
@@ -120,6 +121,7 @@ cspace = cspace || {};
             }
         }
     });
+
     fluid.defaults("cspace.catalogingStructuredDate", {
         gradeNames: ["fluid.rendererComponent", "autoInit"],
         preInitFunction: "cspace.catalogingStructuredDate.preInit",
@@ -172,6 +174,7 @@ cspace = cspace || {};
             }
         }
     });
+
     fluid.defaults("cspace.personStructuredDate", {
         gradeNames: ["fluid.rendererComponent", "autoInit"],
         preInitFunction: "cspace.personStructuredDate.preInit",
@@ -248,6 +251,7 @@ cspace = cspace || {};
             that.applier.modelChanged.removeListener("elPath-" + that.id);
         };
     };
+
     cspace.structuredDate.finalInitFunction = function (that) {
         // Dismiss the structured date popup by pressing the ESC key
         that.union.keyup(function (event) {
@@ -411,6 +415,7 @@ cspace = cspace || {};
         // in the popup container
         that.container.focus(that.showPopup);
     };
+    
     cspace.structuredDate.hidePopup = function (that) {
         that.popupContainer.hide();
     };
@@ -674,6 +679,7 @@ cspace = cspace || {};
             }
         }
     });
+
     fluid.defaults("cspace.workStructuredDate.popup", {
         finalInitFunction: "cspace.workStructuredDate.popup.finalInitFunction",
         preInitFunction: "cspace.workStructuredDate.popup.preInit",
@@ -927,7 +933,6 @@ cspace = cspace || {};
             }
         }
     });
-
 
     fluid.defaults("cspace.personStructuredDate.popup", {
         finalInitFunction: "cspace.personStructuredDate.popup.finalInitFunction",
