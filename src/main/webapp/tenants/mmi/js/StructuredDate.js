@@ -1168,7 +1168,15 @@ cspace = cspace || {};
         }
     };
 
-    cspace.workStructuredDate.popup.updateScalarValues = function (model, changeRequest, applier, composeElPath, refreshView, defaultFormat, displayScalars) {
+    cspace.workStructuredDate.popup.updateScalarValues = function (model, changeRequest, popup) {
+        if (!popup) {
+            return;
+        }
+        var applier = popup.applier,
+            composeElPath = popup.composeElPath,
+            refreshView = popup.refreshView,
+            defaultFormat = popup.options.defaultFormat,
+            displayScalars = popup.options.displayScalars;
         // Login is based on:
         // http://wiki.collectionspace.org/display/collectionspace/Date+Schema+Computations
         var eScalarValuePath = composeElPath("dateEarliestScalarValue"),
@@ -1204,7 +1212,15 @@ cspace = cspace || {};
         }
     };
 
-    cspace.catalogingStructuredDate.popup.updateScalarValues = function (model, changeRequest, applier, composeElPath, refreshView, defaultFormat, displayScalars) {
+    cspace.catalogingStructuredDate.popup.updateScalarValues = function (model, changeRequest, popup) {
+        if (!popup) {
+            return;
+        }
+        var applier = popup.applier,
+            composeElPath = popup.composeElPath,
+            refreshView = popup.refreshView,
+            defaultFormat = popup.options.defaultFormat,
+            displayScalars = popup.options.displayScalars;
         // Login is based on:
         // http://wiki.collectionspace.org/display/collectionspace/Date+Schema+Computations
         var eScalarValuePath = composeElPath("dateEarliestScalarValue"),
@@ -1240,7 +1256,15 @@ cspace = cspace || {};
         }
     };
 
-    cspace.personStructuredDate.popup.updateScalarValues = function (model, changeRequest, applier, composeElPath, refreshView, defaultFormat, displayScalars) {
+    cspace.personStructuredDate.popup.updateScalarValues = function (model, changeRequest, popup) {
+        if (!popup) {
+            return;
+        }
+        var applier = popup.applier,
+            composeElPath = popup.composeElPath,
+            refreshView = popup.refreshView,
+            defaultFormat = popup.options.defaultFormat,
+            displayScalars = popup.options.displayScalars;
         // Login is based on:
         // http://wiki.collectionspace.org/display/collectionspace/Date+Schema+Computations
         var eScalarValuePath = composeElPath("dateEarliestScalarValue"),
