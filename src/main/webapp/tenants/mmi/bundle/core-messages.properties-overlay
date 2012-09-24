@@ -125,6 +125,8 @@ collection-object-formatLabel: Format
 collection-object-updatedAtLabel: Modified Date
 collection-object-updatedAtStartLabel: Earliest
 collection-object-updatedAtEndLabel: Latest
+collection-object-otherNumberLabel: Other number
+collection-object-numberTypeLabel: Other number type
 
 
 #Structured Date
