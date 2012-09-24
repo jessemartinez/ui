@@ -465,7 +465,7 @@ fluid.registerNamespace("cspace.util");
         if (selectedVal.length > 0) {
             var temp = new RegExp(mySelectedWTVal);
             $(myWT).find("option:gt(0)").filter(function() {
-                return (temp).test($(this).val());
+                return (temp).test($(this).text());
             }).attr("selected", "selected");
         }   
     }
