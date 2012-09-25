@@ -43,6 +43,10 @@ acquisition-acquisitionReasonLabel: Provenance
 acquisition-mmiAcquisitionDatesLabel: Acquisition date
 acquisition-mmiAccessionDateLabel: Accession date
 
+#Work
+preferredWork-termSourceDetailLabel: Indexing notes
+preferredWork-termSourceNoteLabel: History notes
+
 #Media
 media-isPrimaryLabel: Is primary
 media-isOriginalMediaLabel: Is original media
