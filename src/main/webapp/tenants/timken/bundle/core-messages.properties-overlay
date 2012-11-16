@@ -4,7 +4,7 @@ login-emailRequired: You must enter a valid email address
 login-passwordsMustMatch: Passwords must match
 login-invalid: Invalid email/password combination
 login-generalError: We are sorry, an error has occurred. Please try again, or contact your system administrator.
-login-current: Current Release 3.0 Information
+login-current: SaaS Demo Information
 login-current-info: The CollectionSpace project team is pleased to announce the release of CollectionSpace 3.0. For the full release announcement, please visit the project's website.
 login-current-details: A major deliverable for this release is increased support for multi-tenancy, or the means by which a single CollectionSpace instance can support disparate tenants. This work is foundational to supporting CollectionSpace in a hosted environment. This demo site now supports two tenants.
 login-login-info: To view the CollectionSpace Timken Museum tenant, use the login box on the right with the login:
@@ -33,3 +33,18 @@ login-loginPasswordInstructions: Password must be between 8 and 24 characters.
 login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
+
+# Person
+vocab-people: Local People
+
+#cataloging
+collection-object-objectNumberLabel: Accession Number
+collection-object-objectNameGroupLabel: Category
+collection-object-objectNameLabel: Category
+collection-object-physicalDescriptionLabel: Physical Description Comments
+collection-object-techniqueGroupLabel: Media
+collection-object-techniqueLabel: Media
+collection-object-techniqueTypeLabel: Media Type
+collection-object-identification-catalogLevelLabel: Cataloging level
+collection-object-provenanceLabel: Provenance
+collection-object-provenanceTypeLabel: Provenance type
