@@ -46,5 +46,7 @@ collection-object-techniqueGroupLabel: Media
 collection-object-techniqueLabel: Media
 collection-object-techniqueTypeLabel: Media Type
 collection-object-identification-catalogLevelLabel: Cataloging level
+collection-object-catalogLevelLabel: Catalog level
+collection-object-provenanceGroupLabel: Provenance
 collection-object-provenanceLabel: Provenance
 collection-object-provenanceTypeLabel: Provenance type
