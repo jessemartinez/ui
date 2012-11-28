@@ -97,4 +97,3 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         setupWork(options);
     }); 
 }(jQuery));
-
