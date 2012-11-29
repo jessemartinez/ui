@@ -30,16 +30,9 @@
                 "publisher": "TriStar Pictures"
             }
         ],
-        "migratedEntityGroup": [
-            {
-                "_primary": true,
-                "migratedEntityType": "distributioncompany",
-                "migratedEntity": "TriStar Pictures"
-            }
-        ],
-        "scopeNote": "scope note goes here",
+        "historyNote": "history note goes here",
         "displayName": "Muppets Take Manhattan (1984)",
-        "medium": "film",
+        "workAuthType": "movingimage",
         "workTermGroup": [
             {
                 "_primary": true,
