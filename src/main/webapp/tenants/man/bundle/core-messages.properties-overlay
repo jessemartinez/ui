@@ -33,3 +33,46 @@ login-loginPasswordInstructions: Password must be between 8 and 24 characters.
 login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
+
+#cataloging
+collection-object-briefDescriptionsLabel: Description
+collection-object-commentsLabel: Notes
+collection-object-numberOfObjectsLabel: Count
+collection-object-objectNumberLabel: Object ID
+collection-object-otherNumberLabel: Other Number
+collection-object-classLabel: Classification
+collection-object-catalogDateLabel: Catalog Date
+collection-object-catalogedByLabel: Cataloged By
+collection-object-curatorialCommentLabel: Curatorial Notes
+collection-object-categoryLabel: Category
+collection-object-subCategoryLabel: Sub-Category
+
+collection-object-contentConceptsLabel: Subjects
+collection-object-contentOtherLabel: Search terms
+collection-object-inscriptionContentLabel: Signed Name
+collection-object-inscriptionDescriptionLabel: Maker's Mark
+collection-object-inscriptionContentPositionLabel: Sig Loc
+collection-object-inscriptionDescriptionPositionLabel: Inscription Position
+collection-object-inscriptionDescriptionMethodLabel: Inscription Technique
+collection-object-inscriptionDescriptionTypeLabel: Inscription Type
+
+collection-object-techniqueLabel: Medium
+collection-object-objectProductionOrganizationLabel: Made
+collection-object-objectProductionPeopleLabel: Culture
+collection-object-objectProductionPersonGroupLabel: Artist/Creator
+collection-object-objectProductionPersonLabel: Artist/Creator
+collection-object-objectProductionPersonRoleLabel: Role Artist
+collection-object-objectProductionDateGroupLabel: Date
+
+collection-object-assocEventNameLabel: Event
+collection-object-assocPeopleLabel: People
+collection-object-assocObjectNoteLabel: Notes on Related Objects
+collection-object-usageLabel: Used
+
+collection-object-referenceLabel: Related Publications
+
+collection-object-fieldCollectionDateLabel: Collection Date
+collection-object-fieldCollectionNoteLabel: Site #
+collection-object-fieldCollectionPlaceLabel: Place of Origin
+collection-object-fieldCollectorsLabel: Collector
+collection-object-provenanceLabel: Provenance
