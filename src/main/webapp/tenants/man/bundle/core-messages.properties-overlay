@@ -34,6 +34,11 @@ login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
 
+# Concept
+vocab-concept: Nomenclature Concept
+vocab-subject: Subject Concept
+
+
 #cataloging
 collection-object-briefDescriptionsLabel: Description
 collection-object-commentsLabel: Notes
