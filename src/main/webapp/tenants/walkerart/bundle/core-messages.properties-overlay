@@ -33,3 +33,14 @@ login-loginPasswordInstructions: Password must be between 8 and 24 characters.
 login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
+
+# Cataloging
+collection-object-objectNumberLabel: Accession Number
+collection-object-briefDescriptionsLabel: Classification
+collection-object-objectProductionDateGroupLabel: Date
+collection-object-techniqueGroupLabel: Medium
+collection-object-ownersLabel: Provenance
+collection-object-textualInscriptionInformationLabel: Inscriptions
+
+collection-object-rightsLabel: Rights
+collection-object-creditLineLabel: Credit Line
