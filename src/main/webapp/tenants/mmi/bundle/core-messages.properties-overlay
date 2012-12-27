@@ -60,6 +60,15 @@ media-imgThumbLabel: Media file
 #intake
 intake-conditionCheckersOrAssessorsLabel: Condition checker
 
+#conditioncheck
+conditioncheck-technicalChangeInformationLabel: Technical Change Information
+conditioncheck-technicalChangeLabel: Technical Change
+conditioncheck-technicalChangeReasonLabel: Technical Change Reason
+technicalChangeGroup-technicalChangeDateLabel: Technical Change Date
+conditioncheck-technicalChangeNoteLabel: Technical Change Note
+conditioncheck-previousSupportLabel: Previous Support
+conditioncheck-newSupportLabel: New Support
+
 #Person
 vocab-person: Local Entities
 person: Entity
