@@ -36,3 +36,6 @@ login-submitNewPassword: Reset
 
 #Citation
 citation-publicationTypeLabel: Publication Type
+place-legacyArgusNotesLabel: Legacy Argus Notes
+place-legacyParentsLabel: Legacy Parents
+place-legacySeeAlsoLabel: Legacy See Also
