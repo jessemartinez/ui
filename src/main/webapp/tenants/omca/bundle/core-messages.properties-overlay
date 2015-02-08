@@ -46,3 +46,11 @@ place-legacySeeAlsoLabel: Legacy See Also
 concept-legacyArgusNotesLabel: Legacy Argus Notes
 concept-legacyParentsLabel: Legacy Parents
 concept-legacySeeAlsoLabel: Legacy See Also
+
+#Person
+person-activeDatesGroupLabel: Active Dates
+person-workLocationLabel: Work Location
+person-personsSpecialtiesLabel: Persons Specialties
+person-personsSpecialtyLabel: Persons Specialty
+person-legacyParentsLabel: Legacy Parents
+person-legacySeeAlsoLabel: Legacy See Also
