@@ -54,3 +54,9 @@ person-personsSpecialtiesLabel: Persons Specialties
 person-personsSpecialtyLabel: Persons Specialty
 person-legacyParentsLabel: Legacy Parents
 person-legacySeeAlsoLabel: Legacy See Also
+
+#Organization
+organization-dissolutionDateGroupLabel: Active Dates
+organization-legacyArgusNotesLabel: Legacy Argus Notes
+organization-legacyParentsLabel: Legacy Parents
+organization-legacySeeAlsoLabel: Legacy See Also
