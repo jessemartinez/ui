@@ -104,3 +104,6 @@ taxon-preferredTaxonLabel: Taxon Term Group(s)
 taxon-miniView-field1Label: Term Type:
 taxon-miniView-field2Label: Term Status:
 taxon-miniView-field3Label: Rank:
+taxon-legacyArgusNotesLabel: Legacy Argus Notes
+taxon-legacyParentsLabel: Legacy Parents
+taxon-legacySeeAlsoLabel: Legacy See Also
