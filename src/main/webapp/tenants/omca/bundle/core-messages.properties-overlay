@@ -107,3 +107,6 @@ taxon-miniView-field3Label: Rank:
 taxon-legacyArgusNotesLabel: Legacy Argus Notes
 taxon-legacyParentsLabel: Legacy Parents
 taxon-legacySeeAlsoLabel: Legacy See Also
+
+#Location
+location-accessNoteLabel: Note
