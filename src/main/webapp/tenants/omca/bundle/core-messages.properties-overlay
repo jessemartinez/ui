@@ -110,3 +110,12 @@ taxon-legacySeeAlsoLabel: Legacy See Also
 
 #Location
 location-accessNoteLabel: Note
+
+#Acquisition
+acquisition-sortableAcquisitionReferenceNumberLabel: Sortable Acquisition Reference Number
+acquisition-contactGroupLabel: Contact
+acquisition-contactLabel: Contact
+acquisition-contactRoleLabel: Contact role
+acquisition-sourceContactNoteLabel: Source/Contact Note
+acquisition-accessionDescriptionLabel: Accession Description
+acquisition-anonymousLabel: Anonymous
