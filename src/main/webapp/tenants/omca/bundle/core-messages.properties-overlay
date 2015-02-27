@@ -119,3 +119,8 @@ acquisition-contactRoleLabel: Contact role
 acquisition-sourceContactNoteLabel: Source/Contact Note
 acquisition-accessionDescriptionLabel: Accession Description
 acquisition-anonymousLabel: Anonymous
+
+#Intake
+intake-normalLocationLabel: Storage Location
+intake-sortableEntryNumberLabel: Sortable Entry Number
+intake-estimatedValueLabel: Estimated Value
