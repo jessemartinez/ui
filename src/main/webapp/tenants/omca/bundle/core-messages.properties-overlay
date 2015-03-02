@@ -61,6 +61,7 @@ person-legacyParentsLabel: Legacy Parents
 person-legacySeeAlsoLabel: Legacy See Also
 
 #Organization
+organization-historyNotesLabel: Address Note
 organization-dissolutionDateGroupLabel: Active Dates
 organization-legacyArgusNotesLabel: Legacy Argus Notes
 organization-legacyParentsLabel: Legacy Parents
