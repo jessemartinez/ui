@@ -52,6 +52,7 @@ concept-legacyParentsLabel: Legacy Parents
 concept-legacySeeAlsoLabel: Legacy See Also
 
 #Person
+person-bioNoteLabel: Address Note
 person-activeDatesGroupLabel: Active Dates
 person-workLocationLabel: Work Location
 person-personsSpecialtiesLabel: Persons Specialties
