@@ -161,3 +161,35 @@ collection-object-viewersNamesLabel: Viewer's Names
 collection-object-viewersNameLabel: Viewer's Name
 collection-object-dateOfCompletionLabel: Date of Completion
 collection-object-viewersPersonalResponseLabel: Viewer's Contribution
+
+# ------------------------------------------------------------
+# Added to support the collectionobjects_anthropology domain schema extensions
+# ******************* Cataloging ******************* #
+collection-object-repatriationNagpraComplianceInformationLabel: Repatriation and NAGPRA Compliance Information
+collection-object-nagpraInventoryNameLabel: NAGPRA inventory
+collection-object-nagpraApplicabilityLabel: Museum's NAGPRA category det.
+collection-object-nagpraCulturalDeterminationLabel: NAGPRA cultural determination
+collection-object-repatriationNoteLabel: Repatriation note
+
+collection-object-repatriationClaimGroupLabel: Claims made for object
+collection-object-repatriationClaimNameLabel: Name of claim
+collection-object-repatriationClaimStatusLabel: Status
+collection-object-repatriationClaimClaimantLabel: Claimant
+collection-object-repatriationClaimNoteLabel: Note
+collection-object-repatriationClaimDateLabel: Date
+
+collection-object-culturalCareInformationLabel: Cultural Care Information
+collection-object-accessRestrictionGroupLabel: Access limitations
+collection-object-accessRestrictionTypeLabel: Type
+collection-object-accessRestrictionLevelLabel: Level
+collection-object-accessRestrictionDetailsLabel: Details
+collection-object-accessRestrictionRequestorLabel: Requestor (person)
+collection-object-accessRestrictionOnBehalfOfLabel: On behalf of (organization)
+collection-object-accessRestrictionDateLabel: Date
+              
+collection-object-culturalCareNoteLabel: Cultural care notes
+collection-object-computedCurrentLocationLabel: Current storage location
+collection-object-computedCurrentLocationSearchLabel: Current storage location
+collection-object-computedCrateLabel: Current box or container
+collection-object-computedCrateSearchLabel: Current box or container
+# ------------------------------------------------------------

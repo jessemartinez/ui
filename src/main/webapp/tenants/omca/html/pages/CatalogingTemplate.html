@@ -1589,6 +1589,104 @@
     </div>
 </div--> <!-- information-group -->
 
+<div class="fl-container-flex fl-fix information-group"> <!-- Repatriation and NAGPRA Compliance Information -->
+    <div class="csc-recordEditor-header fl-container-flex header toggle csc-collection-object-repatriationNagpraComplianceInformation-label"></div>
+    <div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
+        <div class="info-column">
+            <div class="info-column2-50 fl-force-left">
+                <div class="info-column2-50 fl-force-left"> <!-- NAGPRA inventory -->
+                    <div class="narrow info-pair-select">
+                        <div class="header">
+                            <div class="label csc-collection-object-nagpraInventoryName-label"></div>
+                        </div>
+                        <div class="content">
+                            <select class="csc-collection-object-nagpraInventoryName input-select"><option value="">Options not loaded</option></select> <!-- ########## SHOULD BE CONTROLLED BY AUTHORITY ########## -->
+                        </div>
+                    </div>
+                </div>
+                <div class="info-column2-50 fl-force-right"> <!-- NAGPRA applicability -->
+                    <div class="narrow info-pair-select">
+                        <div class="header">
+                            <div class="label csc-collection-object-nagpraApplicability-label"></div>
+                        </div>
+                        <div class="content">
+                            <select class="csc-collection-object-nagpraApplicability input-select"><option value="">Options not loaded</option></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-pair"> <!-- NAGPRA repatriation note -->
+                    <div class="header">
+                        <div class="label csc-collection-object-repatriationNote-label"></div>
+                    </div>
+                    <div class="content">
+                        <textarea rows="2" cols="30" class="input-textarea csc-collection-object-repatriationNote"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-column2-50 fl-force-right">
+                <div class="info-pair"> <!-- NAGPRA cultural determination -->
+                    <div class="header">
+                        <div class="label csc-collection-object-nagpraCulturalDetermination-label"></div>
+                    </div>
+                    <div class="content">
+                        <textarea rows="4" cols="30" class="input-textarea csc-collection-object-nagpraCulturalDetermination"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- information-group -->
+
+<div class="fl-container-flex fl-fix information-group"> <!-- Cultural Care Information -->
+    <div class="csc-recordEditor-header fl-container-flex header toggle csc-collection-object-culturalCareInformation-label"></div>
+    <div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
+        <div class="info-column">
+            <div class="info-column2-50 fl-force-left"> <!-- Cultural care notes -->
+                <div class="info-pair">
+                    <div class="header">
+                        <div class="label csc-collection-object-culturalCareNote-label"></div>
+                    </div>
+                    <div class="content">
+                        <textarea rows="4" cols="30" class="input-textarea csc-collection-object-culturalCareNote"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-column"> <!-- Access limitations -->
+            <div class="info-pair">
+                <div class="header">
+                    <div class="label csc-collection-object-accessRestrictionGroup-label"></div>
+                </div>
+                <div class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="csc-collection-object-accessRestrictionType-label"></td>
+                                <td class="csc-collection-object-accessRestrictionLevel-label"></td>
+                                <td class="csc-collection-object-accessRestrictionDetails-label"></td>
+                                <td class="csc-collection-object-accessRestrictionRequestor-label"></td>
+                                <td class="csc-collection-object-accessRestrictionOnBehalfOf-label"></td>
+                                <td class="csc-collection-object-accessRestrictionDate-label"></td>
+                            </tr>
+                        </thead>
+                        <tbody class="pahmaCustomColumnWidth">
+                            <tr class="csc-collection-object-accessRestrictionGroup">
+                                <td><select class="csc-collection-object-accessRestrictionType input-select"><option value="">Options not loaded</option></select></td>
+                                <td><select class="csc-collection-object-accessRestrictionLevel input-select"><option value="">Options not loaded</option></select></td>
+                                <td><input type="text" class="csc-collection-object-accessRestrictionDetails"/></td>
+                                <td><input type="text" class="csc-collection-object-accessRestrictionRequestor"/></td>
+                                <td><input type="text" class="csc-collection-object-accessRestrictionOnBehalfOf"/></td>
+                                <td class="caldatefield"><input type="text" class="csc-collection-object-accessRestrictionDate caldatefield"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- information-group -->
+
 <div class="fl-container-flex fl-fix information-group">
     <div class="csc-recordEditor-header fl-container-flex header toggle csc-collection-object-objectViewerContributionInformation-label"></div>
     <div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
