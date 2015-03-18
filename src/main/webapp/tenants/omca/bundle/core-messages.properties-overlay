@@ -126,3 +126,38 @@ acquisition-anonymousLabel: Anonymous
 intake-normalLocationLabel: Storage Location
 intake-sortableEntryNumberLabel: Sortable Entry Number
 intake-estimatedValueLabel: Estimated Value
+
+#Cataloging
+collection-object-distinguishingFeaturesLabel: Curatorial Remarks
+collection-object-commentsLabel: Inhouse Notes
+collection-object-argusCountLabel: Argus count
+collection-object-categoriesLabel: Categories
+collection-object-categoryLabel: Category
+collection-object-artLabel: Art
+collection-object-historyLabel: History
+collection-object-scienceLabel: Science
+collection-object-publishedOnWebLabel: Published on the Web
+collection-object-photosLabel: Photos
+collection-object-photoLabel: Photo
+collection-object-determinationHistoryGroupLabel: Determination History
+collection-object-determinationHistoryGroupListLabel: Determination History
+collection-object-dhNameLabel: Name
+collection-object-dhQualifierLabel: Quantifier
+collection-object-identByLabel: By
+collection-object-identDateLabel: Date
+collection-object-institutionLabel: Institution
+collection-object-identKindLabel: Kind
+collection-object-dhReferenceLabel: Reference
+collection-object-dhPageLabel: Page
+collection-object-dhNotesLabel: Notes
+collection-object-argusDescriptionLabel: Argus Description
+collection-object-accessoryLabel: Accessory
+collection-object-argusRemarksLabel: Argus Remarks
+collection-object-argusSubjectLabel: Argus Subject
+collection-object-argusMadeLabel: Argus Made
+collection-object-argusFoundAndUsedLabel: Argus Found and Used
+collection-object-exhibitionHistoryLabel: Exhibition History
+collection-object-viewersNamesLabel: Viewer's Names
+collection-object-viewersNameLabel: Viewer's Name
+collection-object-dateOfCompletionLabel: Date of Completion
+collection-object-viewersPersonalResponseLabel: Viewer's Contribution
