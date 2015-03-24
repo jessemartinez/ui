@@ -779,7 +779,7 @@ table tbody.highlight tr:focus td {
     border:none;
 }
 .info-pair .content.fl-date-group {
-	width: 162px;}
+	/*width: 162px;*/}
 td.fl-date-group {
 	min-width:160px;}
 .info-pair .content > select {
@@ -1771,7 +1771,10 @@ a.cs-searchBox-advancedSearch, a.cs-listView-header-link {
     height:19px;
     width: 18px;
     cursor:pointer;
-    /*float:left;*/}
+    float:none;
+    display: inline-block;
+    vertical-align: top;
+}
 td.fl-date-group .cs-calendar-button {
     float: right;
     height:21px;

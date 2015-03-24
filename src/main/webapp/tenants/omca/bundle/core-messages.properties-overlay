@@ -128,6 +128,7 @@ intake-sortableEntryNumberLabel: Sortable Entry Number
 intake-estimatedValueLabel: Estimated Value
 
 #Cataloging
+collection-object-textualInscriptionInformationLabel: Inscription
 collection-object-distinguishingFeaturesLabel: Curatorial Remarks
 collection-object-commentsLabel: Inhouse Notes
 collection-object-argusCountLabel: Argus count
@@ -157,10 +158,15 @@ collection-object-argusSubjectLabel: Argus Subject
 collection-object-argusMadeLabel: Argus Made
 collection-object-argusFoundAndUsedLabel: Argus Found and Used
 collection-object-exhibitionHistoryLabel: Exhibition History
-collection-object-viewersNamesLabel: Viewer's Names
-collection-object-viewersNameLabel: Viewer's Name
-collection-object-dateOfCompletionLabel: Date of Completion
-collection-object-viewersPersonalResponseLabel: Viewer's Contribution
+
+collection-object-viewerContributionGroupLabel: Object Viewers Contribution
+collection-object-viewerNameLabel: Viewer's Name
+collection-object-viewerRoleLabel: Viewer's Role
+collection-object-viewerContributionLabel: Viewer's Contribution
+collection-object-viewerContributionDateLabel: Date of Completion
+collection-object-viewerReferencesLabel: Viewer's References
+collection-object-viewerReferenceLabel: Viewer's Reference
+collection-object-viewerContributionNoteLabel: Viewer's Contribution Note
 
 # ------------------------------------------------------------
 # Added to support the collectionobjects_anthropology domain schema extensions
