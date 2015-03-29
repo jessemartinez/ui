@@ -199,3 +199,8 @@ collection-object-computedCurrentLocationSearchLabel: Current storage location
 collection-object-computedCrateLabel: Current box or container
 collection-object-computedCrateSearchLabel: Current box or container
 # ------------------------------------------------------------
+
+#LoanIn
+loanin-creditLineLabel: Credit Line
+loanin-anonymousLabel: Anonymous
+loanin-lenderNoteLabel: Lender Note
