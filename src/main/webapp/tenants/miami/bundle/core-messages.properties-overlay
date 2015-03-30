@@ -41,3 +41,18 @@ collection-object-objectTagLabel: Tag
 #Contact
 contact-webAddressTypeLabel: Title
 contact-webAddressLabel: URL
+
+#Storage Location
+location-addressLabel: Address for display
+location-addressDirectionLabel: Address for direction
+location-addressLongitudeLabel: Longitude
+location-addressLatitudeLabel: Latitude
+location-addressAgencyLabel: Agency
+location-addressRegionLabel: Region
+location-addressBuildingLabel: Building
+location-addressStreetLabel: Street Address
+location-addressCityLabel: City
+location-addressStateLabel: State
+location-addressZipCodeLabel: Zip
+location-addressDistrictLabel: District
+location-addressFloorRoomLabel: Floor / Room
