@@ -37,3 +37,7 @@ login-submitNewPassword: Reset
 #Cataloging
 collection-object-objectTagsLabel: Tags
 collection-object-objectTagLabel: Tag
+
+#Contact
+contact-webAddressTypeLabel: Title
+contact-webAddressLabel: URL
