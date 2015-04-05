@@ -75,3 +75,17 @@ location-addressFloorRoomLabel: Floor / Room
 #Acquisition
 acquisition-acquisitionReferenceNumberLabel: Trust Resolutions
 acquisition-acquisitionFundingLabel: Commission cost
+
+#Condition Check
+conditioncheck-conservationCostEstimateCurrencyLabel: Conservation Cost Currency
+conditioncheck-conservationCostEstimateValueLabel: Conservation Cost
+conditioncheck-maintenanceScheduleLabel: Maintenance Schedule
+conditioncheck-previousMaintenanceLabel: Previous Maintenance
+conditioncheck-previousActionDateLabel: Previous Action Date
+conditioncheck-previousActionDescriptionLabel: Previous Action Description 
+conditioncheck-lastActionDateLabel: Last Action Date
+conditioncheck-lastActionDateNoteLabel: Last Action Date Note
+conditioncheck-conditionCheckAssessmentDateLabel: Condition Notes Date
+conditioncheck-conditionCheckNoteLabel: Condition Notes
+conditioncheck-conditionCheckRefNumberLabel: Conservation Report Sequence Number
+conditioncheck-conservationTreatmentPriorityLabel: Conservation Priority Ranking
