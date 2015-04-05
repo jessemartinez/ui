@@ -35,8 +35,23 @@ login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
 
 #Cataloging
+collection-object-objectNumberLabel: Inventory Number
+collection-object-briefDescriptionsLabel: Curatorial Description
+collection-object-distinguishingFeaturesLabel: Body
+collection-object-commentsLabel: Miscellaneous Remarks
+collection-object-objectStatusLabel: Record Type(s)
+collection-object-editionNumberLabel: Edition
 collection-object-objectTagsLabel: Tags
 collection-object-objectTagLabel: Tag
+collection-object-specialStatusLabel: Special Status
+collection-object-exhibitedLabel: Exhibited
+collection-object-policeReportGroupLabel: Police Reports
+collection-object-policeReportNumberLabel: Police Report Number
+collection-object-policeReportDateLabel: Police Report Date
+collection-object-policeReportNoteLabel: Police Report Note
+collection-object-signageStatusLabel: Signage Status
+collection-object-securitiesLabel: Securities
+collection-object-securityLabel: Security
 
 #Contact
 contact-webAddressTypeLabel: Title
