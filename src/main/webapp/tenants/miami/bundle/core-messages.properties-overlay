@@ -89,3 +89,12 @@ conditioncheck-conditionCheckAssessmentDateLabel: Condition Notes Date
 conditioncheck-conditionCheckNoteLabel: Condition Notes
 conditioncheck-conditionCheckRefNumberLabel: Conservation Report Sequence Number
 conditioncheck-conservationTreatmentPriorityLabel: Conservation Priority Ranking
+
+
+#Valuation Control
+valuationcontrol-valuationcontrolRefNumberLabel: Appraisal Report Sequence Number
+valuationcontrol-valueCurrencyLabel: Fair Market Value Currency
+valuationcontrol-valueAmountLabel: Fair Market Value Amount
+valuationcontrol-valueSourceLabel: Appraised By
+valuationcontrol-valueTypeLabel: Fair Market Value
+valuationcontrol-valueNoteLabel: Appraiser Notes
