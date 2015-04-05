@@ -71,3 +71,7 @@ location-addressStateLabel: State
 location-addressZipCodeLabel: Zip
 location-addressDistrictLabel: District
 location-addressFloorRoomLabel: Floor / Room
+
+#Acquisition
+acquisition-acquisitionReferenceNumberLabel: Trust Resolutions
+acquisition-acquisitionFundingLabel: Commission cost
