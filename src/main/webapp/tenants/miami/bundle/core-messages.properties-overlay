@@ -71,6 +71,7 @@ location-addressStateLabel: State
 location-addressZipCodeLabel: Zip
 location-addressDistrictLabel: District
 location-addressFloorRoomLabel: Floor / Room
+location-locatedOutsideLabel: Located Outside?
 
 #Acquisition
 acquisition-acquisitionReferenceNumberLabel: Trust Resolutions
