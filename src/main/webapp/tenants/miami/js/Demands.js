@@ -1121,6 +1121,11 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                 }
             }
         });
+
+        // MIAMI Get the calculated reference storage location record
+        fluid.demands("getCalculatedStorageLocation", "cspace.recordEditor", {
+            container: "{recordEditor}.container"
+        });
         
         // Password validator demands
         fluid.demands("passwordValidator", "cspace.admin", {

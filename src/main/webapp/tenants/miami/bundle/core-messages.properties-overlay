@@ -52,6 +52,8 @@ collection-object-policeReportNoteLabel: Police Report Note
 collection-object-signageStatusLabel: Signage Status
 collection-object-securitiesLabel: Securities
 collection-object-securityLabel: Security
+collection-object-currentLocationLabel: Current Location
+collection-object-computedCurrentLocationDetailsLabel: Current Location Details
 
 #Contact
 contact-webAddressTypeLabel: Title
