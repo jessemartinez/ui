@@ -2109,7 +2109,7 @@ fluid.registerNamespace("cspace.util");
             var triggerAddress = that.locate("addressField");
             var myval = "";
             var updatedAddress = "";
-            if (triggerAddress && triggerAddresslength) {
+            if (triggerAddress && triggerAddress.length) {
                 // cycle through array of address fields to look up
                 fluid.each(that.options.args.fields, function(addfield){
                     myval = $(addfield).val();
