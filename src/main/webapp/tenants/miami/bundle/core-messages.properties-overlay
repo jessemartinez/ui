@@ -74,6 +74,9 @@ location-addressZipCodeLabel: Zip
 location-addressDistrictLabel: District
 location-addressFloorRoomLabel: Floor / Room
 location-locatedOutsideLabel: Located Outside?
+preferredSLA-termSourceIDLabel: Location ID
+preferredSLA-termSourceNoteLabel: Location Body
+location-accessNoteLabel: Hours of Operation
 
 #Acquisition
 acquisition-acquisitionReferenceNumberLabel: Trust Resolutions

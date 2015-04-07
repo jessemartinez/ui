@@ -2080,5 +2080,125 @@ fluid.registerNamespace("cspace.util");
 
         return that;
     };
+
+    // MIAMI Populate the Storage Location Address field from address block
+    fluid.defaults("cspace.util.poulateLocationAddressField", {
+        gradeNames: ["fluid.viewComponent"],
+        selectors: {
+            addressField: ".csc-location-address"
+        },
+        args: {
+            fields: [
+                ".csc-location-addressStreet",
+                ".csc-location-addressCity",
+                ".csc-location-addressState",
+                ".csc-location-addressZipCode"
+            ]
+        },
+        buttons: {
+            populateAddressField: ".csc-populateAddressField"
+        }
+    });
+    cspace.util.poulateLocationAddressField = function(container, options) {
+        var that = fluid.initView("cspace.util.poulateLocationAddressField", container, options);
+
+        var fillFromAddressBlock = function(){
+            // check to see if the triggerAddress field exists
+            // AND has a non-null value,
+            // which indicates the record has been saved
+            var triggerAddress = that.locate("addressField");
+            var myval = "";
+            var updatedAddress = "";
+            if (triggerAddress && triggerAddresslength) {
+                // cycle through array of address fields to look up
+                fluid.each(that.options.args.fields, function(addfield){
+                    myval = $(addfield).val();
+                    if (myval){
+                        if (myval.indexOf("urn:") != -1) {
+                            // if this field is an auth then return clean value
+                            myval = cspace.util.urnToString(myval);
+                        }
+                        // concat w/ punctuation
+                        updatedAddress += myval + ", ";
+                    }
+                });
+                // remove trailing punctuation
+                updatedAddress = updatedAddress.slice(0, -2);
+                console.log(updatedAddress);
+                // update the addressField with the concatenated string of address values
+                $(triggerAddress).val(updatedAddress).change();
+            }
+            return null;
+        }
+
+        // set populate from calculated click event
+        $(that.options.buttons.populateAddressField).click(function(){
+            // fill addressField from retrieved address block values
+            fillFromAddressBlock();
+            $(this).blur();
+        });
+
+        return that;
+    };
+
+    // MIAMI Populate the Storage Location Display Name field from address block
+    fluid.defaults("cspace.util.poulateLocationDisplayNameField", {
+        gradeNames: ["fluid.viewComponent"],
+        selectors: {
+            displayNameField: ".csc-locationAuthority-termDisplayName"
+        },
+        args: {
+            fields: [
+                ".csc-location-addressAgency",
+                ".csc-location-addressBuilding",
+                ".csc-location-addressFloorRoom"
+            ]
+        },
+        buttons: {
+            populateDisplayNameField: ".csc-populateDisplayNameField"
+        }
+    });
+    cspace.util.poulateLocationDisplayNameField = function(container, options) {
+        var that = fluid.initView("cspace.util.poulateLocationDisplayNameField", container, options);
+
+        var fillFromAddressBlock = function(){
+            // check to see if the triggerDisplayNameField field exists
+            // AND has a non-null value,
+            // which indicates the record has been saved
+            var triggerDisplayNameField = that.locate("displayNameField");
+            var myval = "";
+            var updatedDisplayName = "";
+            if (triggerDisplayNameField && triggerDisplayNameField.length) {
+                // cycle through array of address fields to look up
+                fluid.each(that.options.args.fields, function(addfield){
+                    myval = $(addfield).val();
+                    if (myval){
+                        if (myval.indexOf("urn:") != -1) {
+                            // if this field is an auth then return clean value
+                            myval = cspace.util.urnToString(myval);
+                        }
+                        // concat w/ punctuation
+                        updatedDisplayName += myval + " - ";
+                    }
+                });
+                // remove trailing punctuation
+                updatedDisplayName = updatedDisplayName.slice(0, -3);
+                console.log(updatedDisplayName);
+                // update the addressField with the concatenated string of address values
+                $(triggerDisplayNameField).val(updatedDisplayName).change();
+            }
+            return null;
+        }
+
+        // set populate from calculated click event
+        $(that.options.buttons.populateDisplayNameField).click(function(){
+            // fill addressField from retrieved address block values
+            fillFromAddressBlock();
+            $(this).blur();
+        });
+
+
+        return that;
+    };
     
 })(jQuery, fluid);

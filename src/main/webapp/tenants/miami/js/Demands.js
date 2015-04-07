@@ -1126,6 +1126,16 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("getCalculatedStorageLocation", "cspace.recordEditor", {
             container: "{recordEditor}.container"
         });
+
+        // MIAMI Populate the Storage Location Address field from address block
+        fluid.demands("poulateLocationAddress", "cspace.recordEditor", {
+            container: "{recordEditor}.container"
+        });
+
+        // MIAMI Populate the Storage Location Display Name field from address block
+        fluid.demands("poulateLocationDisplayName", "cspace.recordEditor", {
+            container: "{recordEditor}.container"
+        });
         
         // Password validator demands
         fluid.demands("passwordValidator", "cspace.admin", {

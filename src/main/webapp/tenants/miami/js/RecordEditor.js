@@ -185,6 +185,38 @@ cspace = cspace || {};
                 },
                 createOnEvent: "afterRecordRender"
             },
+            // MIAMI Populate the Storage Location Address field from address block
+            poulateLocationAddress: {
+                type: "cspace.util.poulateLocationAddressField",
+                options: {
+                    selectors: {
+                        addressField: "{cspace.recordEditor}.options.selectors.address"
+                    },
+                    args: {
+                        fields: "{cspace.recordEditor}.options.args.fields"
+                    },
+                    buttons: {
+                        populateAddressField: "{cspace.recordEditor}.options.buttons.populateAddressField"
+                    }
+                },
+                createOnEvent: "afterRecordRender"
+            },
+            // MIAMI Populate the Storage Location Display Name field from address block
+            poulateLocationDisplayName: {
+                type: "cspace.util.poulateLocationDisplayNameField",
+                options: {
+                    selectors: {
+                        displayNameField: "{cspace.recordEditor}.options.selectors.displayNameField"
+                    },
+                    args: {
+                        fields: "{cspace.recordEditor}.options.args.fields"
+                    },
+                    buttons: {
+                        populateDisplayNameField: "{cspace.recordEditor}.options.buttons.populateDisplayNameField"
+                    }
+                },
+                createOnEvent: "afterRecordRender"
+            },
             // Component that applies read only styling for all of record
             // editor.
             readOnly: {
