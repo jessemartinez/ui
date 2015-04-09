@@ -109,11 +109,15 @@ conditioncheck-conservationTreatmentPriorityLabel: Conservation Priority Ranking
 
 #Valuation Control
 valuationcontrol-valuationcontrolRefNumberLabel: Appraisal Report Sequence Number
-valuationcontrol-valueCurrencyLabel: Fair Market Value Currency
-valuationcontrol-valueAmountLabel: Fair Market Value Amount
+valuationcontrol-fairMarketGroupLabel: Fair Market Values
+valuationcontrol-fairMarketValueLabel: Fair Market Value
+valuationcontrol-fairMarketCurrencyLabel: Fair Market Curency
+valuationcontrol-fairMarketAmountLabel: Fair Market Amount
+valuationcontrol-fairMarketDateLabel: Fair Market Date
 valuationcontrol-valueSourceLabel: Appraised By
 valuationcontrol-valueTypeLabel: Fair Market Value
 valuationcontrol-valueNoteLabel: Appraiser Notes
+valuationcontrol-valueDateLabel: Appraisal Date
 
 #Media
 media-primaryMediaLabel: Is a primary record?
