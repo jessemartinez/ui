@@ -93,7 +93,9 @@ acquisition-acquisitionFundingLabel: Commission cost
 #Condition Check
 conditioncheck-conservationCostEstimateCurrencyLabel: Conservation Cost Currency
 conditioncheck-conservationCostEstimateValueLabel: Conservation Cost
-conditioncheck-maintenanceScheduleLabel: Maintenance Schedule
+conditioncheck-maintenanceScheduleGroupLabel: Maintenance Schedule
+conditioncheck-maintenanceFrequencyLabel: Maintenance Frequency
+conditioncheck-maintenanceActionRequiredLabel: Maintenance Action Required
 conditioncheck-previousMaintenanceLabel: Previous Maintenance
 conditioncheck-previousActionDateLabel: Previous Action Date
 conditioncheck-previousActionDescriptionLabel: Previous Action Description 
