@@ -1136,6 +1136,11 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("poulateLocationDisplayName", "cspace.recordEditor", {
             container: "{recordEditor}.container"
         });
+
+        // MIAMI Populate the mediaSummary field from media title and primaryRecord fields
+        fluid.demands("poulateMediaSummary", "cspace.recordEditor", {
+            container: "{recordEditor}.container"
+        });
         
         // Password validator demands
         fluid.demands("passwordValidator", "cspace.admin", {

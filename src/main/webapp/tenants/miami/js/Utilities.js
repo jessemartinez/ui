@@ -2200,5 +2200,45 @@ fluid.registerNamespace("cspace.util");
 
         return that;
     };
+
+    // MIAMI Populate the Storage Location Display Name field from address block
+    fluid.defaults("cspace.util.poulateMediaSummaryField", {
+        gradeNames: ["fluid.viewComponent"],
+        selectors: {
+            mediaSummary: ".csc-media-mediaSummary",
+            mediaTitle: ".csc-media-title",
+            primaryMedia: ".csc-media-primaryMedia"
+        }
+    });
+    cspace.util.poulateMediaSummaryField = function(container, options) {
+        var that = fluid.initView("cspace.util.poulateMediaSummaryField", container, options);
+
+        // check to see if the mediaSummary field exists
+        var mediaSummaryField = that.locate("mediaSummary");
+        if (mediaSummaryField && mediaSummaryField.length) {
+            var triggerMediaTitle = that.locate("mediaTitle");
+            var triggerPrimaryMedia = that.locate("primaryMedia");
+
+            var updateSummaryField = function(){
+                // get values of title and primaryMedia
+                var mediaTitleValue = $(triggerMediaTitle).val();
+                var primaryMediaID = $(triggerPrimaryMedia).children(":selected").val();
+                var addDash = "";
+
+                // if both values are non-null then add dash between them
+                if (mediaTitleValue != "" && primaryMediaID != "") {
+                    addDash = " - ";   
+                }
+                
+                // update mediaSummary field with concatenated values
+                $(mediaSummaryField).val(mediaTitleValue + addDash + primaryMediaID).change();
+            }
+
+            // trigger on change
+            $(triggerMediaTitle).change(updateSummaryField);
+            $(triggerPrimaryMedia).change(updateSummaryField);
+        }
+        return that;
+    };
     
 })(jQuery, fluid);

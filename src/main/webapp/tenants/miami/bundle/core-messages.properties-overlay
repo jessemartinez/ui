@@ -114,3 +114,7 @@ valuationcontrol-valueAmountLabel: Fair Market Value Amount
 valuationcontrol-valueSourceLabel: Appraised By
 valuationcontrol-valueTypeLabel: Fair Market Value
 valuationcontrol-valueNoteLabel: Appraiser Notes
+
+#Media
+media-primaryMediaLabel: Is a primary record?
+media-mediaSummaryLabel: Media Summary

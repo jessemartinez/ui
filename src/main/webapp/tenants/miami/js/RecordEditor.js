@@ -217,6 +217,18 @@ cspace = cspace || {};
                 },
                 createOnEvent: "afterRecordRender"
             },
+            // MIAMI Populate the mediaSummary field from media title and primaryRecord fields
+            poulateMediaSummary: {
+                type: "cspace.util.poulateMediaSummaryField",
+                options: {
+                    selectors: {
+                        mediaSummary: "{cspace.recordEditor}.options.selectors.mediaSummary",
+                        mediaTitle: "{cspace.recordEditor}.options.selectors.mediaTitle",
+                        primaryMedia: "{cspace.recordEditor}.options.selectors.primaryMedia"
+                    }
+                },
+                createOnEvent: "afterRecordRender"
+            },
             // Component that applies read only styling for all of record
             // editor.
             readOnly: {
