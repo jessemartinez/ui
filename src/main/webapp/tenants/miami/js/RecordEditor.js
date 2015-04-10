@@ -172,19 +172,6 @@ cspace = cspace || {};
                 },
                 createOnEvent: "afterRecordRender"
             },
-            // MIAMI Get the calculated reference storage location record
-            getCalculatedStorageLocation: {
-                type: "cspace.util.getCalculatedStorageLoc",
-                options: {
-                    selectors: {
-                        computedCurrentLocationDetails: "{cspace.recordEditor}.options.selectors.computedCurrentLocationDetails",
-                        currentLocation: "{cspace.recordEditor}.options.selectors.currentLocation",
-                        appURL: "{cspace.recordEditor}.options.selectors.appURL",
-                        fieldName: "{cspace.recordEditor}.options.selectors.address"
-                    }
-                },
-                createOnEvent: "afterRecordRender"
-            },
             // MIAMI Populate the Storage Location Address field from address block
             poulateLocationAddress: {
                 type: "cspace.util.poulateLocationAddressField",

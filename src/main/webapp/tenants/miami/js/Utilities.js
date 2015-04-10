@@ -2030,57 +2030,6 @@ fluid.registerNamespace("cspace.util");
         };
     };
 
-    // MIAMI Get the calculated reference storage location record
-    fluid.defaults("cspace.util.getCalculatedStorageLoc", {
-        gradeNames: ["fluid.viewComponent"],
-        selectors: {
-            computedCurrentLocationDetails: ".csc-collection-object-computedCurrentLocationDetails",
-            currentLocation: ".csc-collection-object-currentLocation",
-            appURL: "../../../tenant/miami/vocabularies/basic/location/urn:cspace:name",
-            fieldName: "address"
-        }
-    });
-    cspace.util.getCalculatedStorageLoc = function(container, options) {
-        var that = fluid.initView("cspace.util.getCalculatedStorageLoc", container, options);
-        // check to see if the currentLocation field exists
-        // AND is present
-        // AND has a non-null value,
-        // which indicates the record has been saved
-        var curLocURN = that.locate("currentLocation");
-        if (curLocURN && curLocURN.length && curLocURN.val().length > 0) {
-
-            // example URN value for curLocURN
-            // "urn:cspace:miamidadepublicart.org:locationauthorities:name(location) \
-            // :item:name(Shelf4B)'Shelf 4B'";
-
-            // regex pattern to match the authority item name including surrounding ()
-            var regexStr = /^.*:item:name(.*)\'.*\'$/;
-            var curLocExec = regexStr.exec(curLocURN.val());
-            // curLocExec returns an array with the first index containing the string it matches
-            // then additional indexes containing parenthesized substring matches
-            var curLocName = curLocExec[1]; // (Shelf4B)
-
-            // compose the app layer URL that will give us the field values of the onView field
-            var url = that.options.selectors.appURL + curLocName;
-
-            // find computedCurrentLocationDetails element AND make sure it exists.
-            // we assume there is only one instance of computedCurrentLocationDetails
-            var computedCurrentLocationDetailsElem = that.locate("computedCurrentLocationDetails");
-            if (computedCurrentLocationDetailsElem && computedCurrentLocationDetailsElem.length > 0) {
-                $.get(url, function(data){
-                    console.log("cspace.util.getCalculatedStorageLoc: retrieved referenced location authority record: " + curLocName);
-                    var currentLocationValue = data.fields[that.options.selectors.fieldName];
-                    // add currentLocationValue value to computedCurrentLocationDetails
-                    $(computedCurrentLocationDetailsElem).val(currentLocationValue);
-                }).fail(function() {
-                    console.log("cspace.util.getCalculatedStorageLoc: could not retrieve referenced location authority record: " + curLocName);
-                });
-            }
-        }
-
-        return that;
-    };
-
     // MIAMI Populate the Storage Location Address field from address block
     fluid.defaults("cspace.util.poulateLocationAddressField", {
         gradeNames: ["fluid.viewComponent"],
