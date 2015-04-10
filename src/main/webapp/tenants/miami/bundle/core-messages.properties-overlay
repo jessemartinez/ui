@@ -34,6 +34,13 @@ login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
 
+# Storage Location
+vocab-location: Local Locations
+vocab-offsite_sla: Offsite Locations
+
+# Records
+location: Location
+
 #Cataloging
 collection-object-objectNumberLabel: Inventory Number
 collection-object-briefDescriptionsLabel: Curatorial Description
@@ -68,6 +75,7 @@ contact-webAddressTypeLabel: Title
 contact-webAddressLabel: URL
 
 #Storage Location
+location-locationTermInformationLabel: Location Information
 location-addressLabel: Address for display
 location-addressDirectionLabel: Address for direction
 location-addressLongitudeLabel: Longitude

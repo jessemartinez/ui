@@ -2149,7 +2149,6 @@ fluid.registerNamespace("cspace.util");
         },
         args: {
             fields: [
-                ".csc-location-addressAgency",
                 ".csc-location-addressBuilding",
                 ".csc-location-addressFloorRoom"
             ]
