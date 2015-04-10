@@ -1120,7 +1120,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     togglable: "{hierarchy}.options.selectors.togglable"
                 }
             }
-        });getCalculatedStorageLocation
+        });
 
         // MIAMI Populate the Storage Location Address field from address block
         fluid.demands("poulateLocationAddress", "cspace.recordEditor", {
