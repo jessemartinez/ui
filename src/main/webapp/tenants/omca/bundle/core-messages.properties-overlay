@@ -201,6 +201,9 @@ collection-object-computedCrateSearchLabel: Current box or container
 # ------------------------------------------------------------
 
 #LoanIn
+loanin-borrowersContactLabel: OMCA Contact
+loanin-borrowersAuthorizerLabel: OMCA Authorizer
+loanin-borrowersAuthorizationDateLabel: OMCA Authorization Date
 loanin-creditLineLabel: Credit Line
 loanin-anonymousLabel: Anonymous
 loanin-lenderNoteLabel: Lender Note
