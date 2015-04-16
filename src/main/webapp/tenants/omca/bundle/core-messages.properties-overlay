@@ -52,7 +52,6 @@ concept-legacyParentsLabel: Legacy Parents
 concept-legacySeeAlsoLabel: Legacy See Also
 
 #Person
-person-bioNoteLabel: Address Note
 person-activeDatesGroupLabel: Active Dates
 person-workLocationLabel: Work Location
 person-personsSpecialtiesLabel: Persons Specialties
@@ -61,11 +60,22 @@ person-legacyParentsLabel: Legacy Parents
 person-legacySeeAlsoLabel: Legacy See Also
 
 #Organization
-organization-historyNotesLabel: Address Note
 organization-dissolutionDateGroupLabel: Active Dates
 organization-legacyArgusNotesLabel: Legacy Argus Notes
 organization-legacyParentsLabel: Legacy Parents
 organization-legacySeeAlsoLabel: Legacy See Also
+
+#Contact
+contact-addressTypeOMCALabel: Type
+contact-addressPostCodeOMCALabel: Postal Code
+contact-addressMunicipalityOMCALabel: Municipality
+contact-addressGroupOMCALabel: Address
+contact-addressPlace1OMCALabel: Line 1
+contact-addressStateOrProvinceOMCALabel: State/Province
+contact-addressPlace2OMCALabel: Line 2
+contact-addressCountryOMCALabel: Country
+contact-addressNoteOMCALabel: Note
+
 
 # Taxon record
 taxon: Taxon
