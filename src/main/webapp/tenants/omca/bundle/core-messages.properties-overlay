@@ -225,3 +225,6 @@ loanout-sortableLoanOutNumberLabel: Sortable Loan Out Number
 #Object Exit
 objectexit-depositorLabel: Recipient
 objectexit-sortableExitNumberLabel: Sortable Exit Number
+
+#Movement
+movement-normalLocationLabel: Storage Location
