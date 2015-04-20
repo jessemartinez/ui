@@ -218,3 +218,6 @@ loanin-sortableLoanInNumberLabel: Sortable Loan In Number
 loanin-creditLineLabel: Credit Line
 loanin-anonymousLabel: Anonymous
 loanin-lenderNoteLabel: Lender Note
+
+#LoanOut
+loanout-sortableLoanOutNumberLabel: Sortable Loan Out Number
