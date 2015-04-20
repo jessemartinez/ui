@@ -221,3 +221,7 @@ loanin-lenderNoteLabel: Lender Note
 
 #LoanOut
 loanout-sortableLoanOutNumberLabel: Sortable Loan Out Number
+
+#Object Exit
+objectexit-depositorLabel: Recipient
+objectexit-sortableExitNumberLabel: Sortable Exit Number
