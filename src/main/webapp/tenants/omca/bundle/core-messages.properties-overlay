@@ -228,3 +228,7 @@ objectexit-sortableExitNumberLabel: Sortable Exit Number
 
 #Movement
 movement-normalLocationLabel: Storage Location
+
+#Media
+media-isPrimaryLabel: Is primary
+media-approveForPublicLabel: Approve for public
