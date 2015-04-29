@@ -136,6 +136,9 @@ acquisition-anonymousLabel: Anonymous
 intake-normalLocationLabel: Storage Location
 intake-sortableEntryNumberLabel: Sortable Entry Number
 intake-estimatedValueLabel: Estimated Value
+intake-depositorOMCAGroupLabel: Depositors
+intake-depositorOMCALabel: Depositor
+intake-depositorsRequirementsOMCALabel: Depositor Requirements
 
 #Cataloging
 collection-object-textualInscriptionInformationLabel: Inscription
