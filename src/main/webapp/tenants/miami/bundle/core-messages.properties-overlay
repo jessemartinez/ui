@@ -46,6 +46,7 @@ collection-object-objectNumberLabel: Inventory Number
 collection-object-briefDescriptionsLabel: Curatorial Description
 collection-object-distinguishingFeaturesLabel: Body
 collection-object-commentsLabel: Miscellaneous Remarks
+collection-object-materialGroupLabel: Medium
 collection-object-materialLabel: Medium
 dimension-measuredPartGroupLabel: Size
 collection-object-inscriptionContentLabel: Distinguishing Marks
