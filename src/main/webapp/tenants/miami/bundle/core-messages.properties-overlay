@@ -131,3 +131,6 @@ valuationcontrol-valueDateLabel: Appraisal Date
 #Media
 media-primaryMediaLabel: Is a primary record?
 media-mediaSummaryLabel: Media Summary
+
+#Movement
+movement-currentLocationAgencyLabel: Agency
