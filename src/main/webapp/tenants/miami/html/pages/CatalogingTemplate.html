@@ -52,7 +52,7 @@
                     </div>
                 </div-->
 
-                <div class="info-pair-select">
+                <div class="info-pair">
                     <div class="header">
                         <div class="label csc-collection-object-collection-label"></div>
                     </div>
@@ -90,10 +90,10 @@
 
                 <div class="info-pair-select">
                     <div class="header">
-                        <div class="label csc-collection-object-exhibited-label"></div>
+                        <div class="label csc-collection-object-recordObjectType-label"></div>
                     </div>
                     <div class="content">
-                        <input type="text" class="csc-collection-object-exhibited"/>
+                        <select class="csc-collection-object-recordObjectType input-select"><option value="">Options not loaded</option></select>
                     </div>
                 </div>
 
@@ -143,6 +143,16 @@
                         <textarea rows="4" cols="30" class="input-textarea csc-object-identification-comments"></textarea>
                     </div>
                 </div>
+
+                <div class="info-pair-select">
+                    <div class="header">
+                        <div class="label csc-collection-object-exhibited-label"></div>
+                    </div>
+                    <div class="content">
+                        <textarea rows="4" cols="30" class="input-textarea csc-collection-object-exhibited"></textarea>
+                    </div>
+                </div>
+
                 <div class="info-pair">
                     <div class="header">
                         <div class="label csc-collection-object-computedCurrentLocation-label"></div>
@@ -496,10 +506,10 @@
 
         <div class="csc-collection-object-dimension cs-multipleEdit"></div>
 
-        <div class="fl-container-flex fl-fix information-subgroup">
+        <!--div class="fl-container-flex fl-fix information-subgroup">
             <div class="csc-recordEditor-header fl-container-flex header toggle csc-collection-object-contentInformation-label"></div>
             <div class="csc-recordEditor-togglable fl-container-flex fl-fix content main">
-                <!--div class="info-column">
+                <div class="info-column">
                     <div class="info-pair">
                         <div class="header">
                             <div class="label csc-collection-object-contentDescription-label"></div>
@@ -508,54 +518,54 @@
                             <textarea rows="4" cols="30" class="input-textarea csc-object-description-content-description"></textarea>
                         </div>
                     </div>
-                </div-->
+                </div>
 
                 <div class="info-column">
                     <div class="info-column2-50 fl-force-left">
-                        <!--div class="info-pair-select">
+                        <div class="info-pair-select">
                             <div class="header">
                                 <div class="label csc-collection-object-contentLanguages-label"></div>
                             </div>
                             <div class="content">
                                 <select class="csc-object-description-content-language input-select"><option value="">Options not loaded</option></select>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentActivities-label"></div>
                             </div>
                             <div class="content">
                                 <input type="text" class="csc-object-description-content-activity"/>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentConcepts-label"></div>
                             </div>
                             <div class="content">
                                 <input type="text" class="csc-object-description-content-concept"/>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentDate-label"></div>
                             </div>
                             <div class="content">
                                 <input type="text" class="csc-object-description-content-date" />
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair-select">
+                        <div class="info-pair-select">
                             <div class="header">
                                 <div class="label csc-collection-object-contentPositions-label"></div>
                             </div>
                             <div class="content">
                                 <select class="csc-object-description-content-position input-select"><option value="">Options not loaded</option></select>
                             </div>
-                        </div-->
+                        </div>
 
                         <div class="info-pair">
                             <div class="header">
@@ -581,52 +591,52 @@
                     </div>
 
                     <div class="info-column2-50 fl-force-right">
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentPeoples-label"></div>
                             </div>
                             <div class="content">
                                 <input type="text" class="csc-object-description-content-people"/>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentPersons-label"></div>
                             </div>
                             <div class="content">
                                 <input type="text" class="csc-object-description-content-person"/>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentPlaces-label"></div>
                             </div>
                             <div class="content">
                                 <input type="text" class="csc-object-description-content-place"/>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair-select">
+                        <div class="info-pair-select">
                             <div class="header">
                                 <div class="label csc-collection-object-contentScripts-label"></div>
                             </div>
                             <div class="content">
                                 <select class="csc-object-description-content-script input-select"><option value="">Options not loaded</option></select>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentOrganizations-label"></div>
                             </div>
                             <div class="content">
                                 <input type="text" class="csc-object-description-content-organization"/>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentEventNameGroup-label"></div>
                             </div>
@@ -646,9 +656,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </div-->
+                        </div>
 
-                        <!--div class="info-pair">
+                        <div class="info-pair">
                             <div class="header">
                                 <div class="label csc-collection-object-contentOtherGroup-label"></div>
                             </div>
@@ -668,11 +678,11 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </div-->
+                        </div>
                     </div>
                 </div>
 
-                <!--div class="info-column">
+                <div class="info-column">
                     <div class="info-pair">
                         <div class="header">
                             <div class="label csc-collection-object-contentNote-label"></div>
@@ -681,9 +691,9 @@
                             <textarea rows="4" cols="30" class="input-textarea csc-object-description-content-note"></textarea>
                         </div>
                     </div>
-                </div-->
+                </div>
             </div>
-        </div> <!-- information-subgroup -->            
+        </div--> <!-- information-subgroup -->            
 
         <div class="fl-container-flex fl-fix information-group infoGroup"> <!--info-group = repeatable container -->
             <div class="csc-collection-object-textualInscriptionGroup cs-repeatable-stretched">

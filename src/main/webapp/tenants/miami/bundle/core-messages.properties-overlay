@@ -70,6 +70,7 @@ collection-object-securitiesLabel: Securities
 collection-object-securityLabel: Security
 collection-object-currentLocationLabel: Current Location
 collection-object-computedCurrentLocationDetailsLabel: Current Location Details
+collection-object-recordObjectTypeLabel: Object Type
 
 #Contact
 contact-webAddressTypeLabel: Title
