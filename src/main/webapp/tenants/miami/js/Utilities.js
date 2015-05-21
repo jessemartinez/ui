@@ -2098,8 +2098,7 @@ fluid.registerNamespace("cspace.util");
         },
         args: {
             fields: [
-                ".csc-location-addressBuilding",
-                ".csc-location-addressFloorRoom"
+                ".csc-location-addressBuilding"
             ]
         },
         buttons: {
