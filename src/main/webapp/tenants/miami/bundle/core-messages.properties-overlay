@@ -71,6 +71,10 @@ collection-object-securityLabel: Security
 collection-object-currentLocationLabel: Current Location
 collection-object-computedCurrentLocationDetailsLabel: Current Location Details
 collection-object-recordObjectTypeLabel: Object Type
+collection-object-videoGroupLabel: Videos
+collection-object-videoTypeLabel: Video Type
+collection-object-videoURLLabel: Video URL
+collection-object-videoNoteLabel: Video Note
 
 #Contact
 contact-webAddressTypeLabel: Title
