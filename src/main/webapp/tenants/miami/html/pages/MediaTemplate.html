@@ -66,8 +66,23 @@
                             <input type="text" class="csc-media-mediaSummary" />
                         </div>
                     </div>
+                    <div class="info-pair">
+                        <div class="header">
+                            <div class="label csc-media-mediaStatus-label"></div>
+                        </div>
+                        <div class="content">
+                            <select class="csc-media-mediaStatus input-select"><option value="">Options not loaded</option></select>
+                        </div>
+                    </div>
+                    <div class="info-pair">
+                        <div class="header">
+                            <div class="label csc-media-externalUrl-label"></div>
+                        </div>
+                        <div class="content">
+                            <input type="text" class="csc-media-externalUrl" />
+                        </div>
+                    </div>
                 </div>
-
                 <div class="info-column2-50 fl-force-right">
                     <div class="info-pair">
                         <div class="header">
@@ -85,17 +100,12 @@
                             <select class="csc-media-primaryMedia input-select"><option value="">Options not loaded</option></select>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="info-column">
-                <div class="info-column2-50 fl-force-left" >
-                    <div class="info-pair">
+                    <div class="info-pair-select">
                         <div class="header">
-                            <div class="label csc-media-externalUrl-label"></div>
+                            <div class="label csc-media-types-label"></div>
                         </div>
                         <div class="content">
-                            <input type="text" class="csc-media-externalUrl" />
+                            <select class="csc-media-type input-select"><option value="">Options not loaded</option></select>
                         </div>
                     </div>
                 </div>
@@ -113,22 +123,6 @@
                             <input type="text" class="csc-media-contributor" />
                         </div>
                     </div>
-                </div>
-
-                <div class="info-column2-50 fl-force-right">
-                    <div class="info-pair-select">
-                        <div class="header">
-                            <div class="label csc-media-types-label"></div>
-                        </div>
-                        <div class="content">
-                            <select class="csc-media-type input-select"><option value="">Options not loaded</option></select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-column">
-                <div class="info-column2-50 fl-force-left" >
                     <div class="info-pair">
                         <div class="header">
                             <div class="label csc-media-creator-label"></div>
@@ -137,22 +131,6 @@
                             <input type="text" class="csc-media-creator" />
                         </div>
                     </div>
-                </div>
-
-                <div class="info-column2-50 fl-force-right">
-                    <div class="info-pair">
-                        <div class="header">
-                            <div class="label csc-media-coverage-label"></div>
-                        </div>
-                        <div class="content">
-                            <input type="text" class="csc-media-coverage" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-column">
-                <div class="info-column2-50 fl-force-left" >
                     <div class="info-pair-select">
                         <div class="header">
                             <div class="label csc-media-language-label"></div>
@@ -161,22 +139,6 @@
                             <select class="csc-media-language input-select"><option value="">Options not loaded</option></select>
                         </div>
                     </div>
-                </div>
-
-                <div class="info-column2-50 fl-force-right">
-                    <div class="info-pair">
-                        <div class="header">
-                            <div class="label csc-media-dateGroup-label"></div>
-                        </div>
-                        <div class="content">
-                            <input type="text" class="csc-dateGroup-date" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-column">
-                <div class="info-column2-50 fl-force-left" >
                     <div class="info-pair">
                         <div class="header">
                             <div class="label csc-media-publisher-label"></div>
@@ -185,22 +147,6 @@
                             <input type="text" class="csc-media-publisher" />
                         </div>
                     </div>
-                </div>
-
-                <div class="info-column2-50 fl-force-right">
-                    <div class="info-pair">
-                        <div class="header">
-                            <div class="label csc-media-source-label"></div>
-                        </div>
-                        <div class="content">
-                            <input type="text" class="csc-media-source" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-column">
-                <div class="info-column2-50 fl-force-left" >
                     <div class="info-pair">
                         <div class="header">
                             <div class="label csc-media-relation-label"></div>
@@ -209,22 +155,6 @@
                             <input type="text" class="csc-media-relation" />
                         </div>
                     </div>
-                </div>
-
-                <div class="info-column2-50 fl-force-right">
-                    <div class="info-pair">
-                        <div class="header">
-                            <div class="label csc-media-subject-label"></div>
-                        </div>
-                        <div class="content">
-                            <input type="text" class="csc-media-subject" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-column">
-                <div class="info-column2-50 fl-force-left" >
                     <div class="info-pair">
                         <div class="header">
                             <div class="label csc-media-copyrightStatement-label"></div>
@@ -238,6 +168,38 @@
                 <div class="info-column2-50 fl-force-right">
                     <div class="info-pair">
                         <div class="header">
+                            <div class="label csc-media-coverage-label"></div>
+                        </div>
+                        <div class="content">
+                            <input type="text" class="csc-media-coverage" />
+                        </div>
+                    </div>
+                    <div class="info-pair">
+                        <div class="header">
+                            <div class="label csc-media-dateGroup-label"></div>
+                        </div>
+                        <div class="content">
+                            <input type="text" class="csc-dateGroup-date" />
+                        </div>
+                    </div>
+                    <div class="info-pair">
+                        <div class="header">
+                            <div class="label csc-media-source-label"></div>
+                        </div>
+                        <div class="content">
+                            <input type="text" class="csc-media-source" />
+                        </div>
+                    </div>
+                    <div class="info-pair">
+                        <div class="header">
+                            <div class="label csc-media-subject-label"></div>
+                        </div>
+                        <div class="content">
+                            <input type="text" class="csc-media-subject" />
+                        </div>
+                    </div>
+                    <div class="info-pair">
+                        <div class="header">
                             <div class="label csc-media-rightsHolder-label"></div>
                         </div>
                         <div class="content">
@@ -247,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="info-column fl-force-left">
+            <div class="info-column">
                 <div class="info-pair">
                     <div class="header">
                         <div class="label csc-media-description-label"></div>

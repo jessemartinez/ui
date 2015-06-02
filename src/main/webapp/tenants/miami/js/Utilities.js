@@ -2174,11 +2174,11 @@ fluid.registerNamespace("cspace.util");
 
                 // if both values are non-null then add dash between them
                 if (mediaTitleValue != "" && primaryMediaID != "") {
-                    addDash = " - ";   
+                    addDash = " - (primary image)";   
                 }
                 
                 // update mediaSummary field with concatenated values
-                $(mediaSummaryField).val(mediaTitleValue + addDash + primaryMediaID).change();
+                $(mediaSummaryField).val(mediaTitleValue + addDash).change();
             }
 
             // trigger on change
