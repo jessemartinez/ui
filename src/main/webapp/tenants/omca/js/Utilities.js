@@ -2037,5 +2037,73 @@ fluid.registerNamespace("cspace.util");
             }
         };
     };
+
+
+    // OMCA Check validity of ID value
+    fluid.defaults("cspace.util.checkIDValues", {
+        gradeNames: ["fluid.viewComponent"],
+        selectors: {
+            currentIDValue: ".csc-object-identification-object-number",
+            appURL: "../../../tenant/omca/cataloging/search?query=",
+            errorMatch: "matched-value-conflict"
+        }
+    });
+    cspace.util.checkIDValues = function(container, options) {
+        var that = fluid.initView("cspace.util.checkIDValues", container, options);
+        var currentIDValueElem = that.locate("currentIDValue");
+        
+        if (currentIDValueElem && currentIDValueElem.length) {
+
+            // Add message span to parent container of id field
+            var spanHTML = '<span id="cs-id-message-box" class="arrow-up" style="display:none;"></span>';
+            $(currentIDValueElem).parents(".info-pair").eq(0).append(spanHTML);
+            var messageBox = $("#cs-id-message-box");
+
+            var url = that.options.selectors.appURL;
+            var originalIDValue = $(currentIDValueElem).val();
+            var updatedIDValue = "";
+            console.log("checkIDValue original: " + originalIDValue);
+
+            var success = function(data){
+                console.log("retrieved data length: " + data["results"].length);
+                if (data["results"].length && updatedIDValue != originalIDValue){
+                    console.log("Matched record with ID (" + updatedIDValue + ") with CSID: " + data["results"][0]["csid"]);
+                    $(currentIDValueElem).addClass(that.options.selectors.errorMatch);
+                    $(messageBox).html("The number <a target='_blank' href='cataloging.html?csid=" + data["results"][0]["csid"] + "'>"+ updatedIDValue + "</a> is already in use.").show();
+                } else {
+                    console.log("there is no record with matching ID: " + updatedIDValue);
+                    $(currentIDValueElem).removeClass(that.options.selectors.errorMatch);
+                    $(messageBox).html("").hide();
+                }
+            }
+
+            var printError = function( req, status, err ) {
+                console.log("something went wrong", status, err );
+            };
+
+            // Add event handler when input field value changes
+            $(".csc-object-identification-object-number").change(function() {
+                updatedIDValue = $(currentIDValueElem).val();
+                console.log("checkIDValue updated: " + updatedIDValue);
+
+                if (updatedIDValue && updatedIDValue != "" && updatedIDValue.length){
+                    $.ajax({
+                        url: url,
+                        type: "POST",
+                        dataType: "json",
+                        data: '{"fields":{"objectNumbers":[{"_primary":true,"objectNumber":"'+updatedIDValue+'"}]},"operation":"or"}',
+                        success: success,
+                        error: printError
+                    }).fail(function() {
+                        console.log("error retrieving data");
+                    });
+                }
+            });
+        }
+
+        console.log("checkIDValue done.");
+        return that;
+    };
+
     
 })(jQuery, fluid);

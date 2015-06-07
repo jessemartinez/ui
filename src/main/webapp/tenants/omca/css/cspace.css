@@ -2594,3 +2594,16 @@ li.cs-repeatable-repeat .stretched .cs-termList {
 .stretched input.cs-autocomplete-input, .stretched ul.cs-repeatable li.cs-repeatable-repeat input.cs-autocomplete-input, .stretched ul.cs-repeatable li.cs-repeatable-repeat input.cs-repeatable-content, .stretched ul.cs-repeatable li.cs-repeatable-repeat textarea.cs-repeatable-content {
     width: 94%
 }
+#cs-id-message-box {
+    display: inline-block;
+    padding: 8px;
+    margin-top: 2px;
+    font-size: 14px;
+    background-color:#ccc;
+    position: absolute;
+    border: 1px solid red;
+    z-index: 9999;
+}
+.matched-value-conflict {
+    border: 2px solid red !important;
+}
