@@ -112,8 +112,12 @@ conditioncheck-maintenanceFrequencyLabel: Maintenance Frequency
 conditioncheck-maintenanceActionRequiredLabel: Maintenance Action Required
 conditioncheck-previousMaintenanceLabel: Previous Maintenance
 conditioncheck-previousActionDateLabel: Previous Action Date
-conditioncheck-previousActionDescriptionLabel: Previous Action Description 
+conditioncheck-previousActionDateStartLabel: Earliest
+conditioncheck-previousActionDateEndLabel: Latest
+conditioncheck-previousActionDescriptionLabel: Previous Action Description
 conditioncheck-lastActionDateLabel: Last Action Date
+conditioncheck-lastActionDateStartLabel: Earliest
+conditioncheck-lastActionDateEndLabel: Latest
 conditioncheck-lastActionDateNoteLabel: Last Action Date Note
 conditioncheck-conditionCheckAssessmentDateLabel: Condition Notes Date
 conditioncheck-conditionCheckNoteLabel: Condition Notes
