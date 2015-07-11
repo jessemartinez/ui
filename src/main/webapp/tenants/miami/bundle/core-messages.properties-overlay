@@ -101,7 +101,7 @@ preferredSLA-termSourceNoteLabel: Location Body
 location-accessNoteLabel: Hours of Operation
 
 #Acquisition
-acquisition-acquisitionReferenceNumberLabel: Trust Resolutions
+acquisition-trustResolutionsLabel: Trust Resolutions
 acquisition-acquisitionFundingLabel: Commission cost
 
 #Condition Check
