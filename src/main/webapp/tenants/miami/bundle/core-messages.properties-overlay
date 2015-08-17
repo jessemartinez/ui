@@ -33,6 +33,10 @@ login-loginPasswordInstructions: Password must be between 8 and 24 characters.
 login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
+login-current-info-1: To access the Miami-Dade Public Art CollectionSpace tenant, use the login box on the right:
+login-current-info-2:
+login-current-info-3:
+login-current-info-4:
 
 # Storage Location
 vocab-location: Local Locations
