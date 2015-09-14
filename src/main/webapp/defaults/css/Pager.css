@@ -16,13 +16,24 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
 /***********************************************************/
 /** LAYOUT **/
 /* Pager data */
-.fl-pager .fl-pager-data {
+
+.fl-pager .fl-pager-data .flc-pager-sort-header a {
+  display:block;
+  padding:5px 2px 5px 4px;
 }
-.fl-pager .fl-pager-data .fl-pager-desc {
-  background: url(../images/arrow-up.png) no-repeat right;
+.fl-pager .fl-pager-data .flc-pager-sort-header a:hover {
+  background-color: #CCC;
 }
-.fl-pager .fl-pager-data .fl-pager-asc {
-  background: url(../images/arrow-dn.png) no-repeat right;
+.fl-pager .fl-pager-data th {
+    padding:0;
+}
+.fl-pager .fl-pager-data .fl-pager-desc a {
+  padding-left:25px;
+  background: #EFEFEF url(../images/arrow-up.png) no-repeat left center;
+}
+.fl-pager .fl-pager-data .fl-pager-asc a {
+  padding-left:25px;
+  background: #EFEFEF url(../images/arrow-dn.png) no-repeat left center;
 }
 
 
