@@ -180,6 +180,7 @@ collection-object-viewerContributionDateLabel: Date of Completion
 collection-object-viewerReferencesLabel: Viewer's References
 collection-object-viewerReferenceLabel: Viewer's Reference
 collection-object-viewerContributionNoteLabel: Viewer's Contribution Note
+collection-object-sortableObjectNumberLabel: Sortable Identification Number
 
 # ------------------------------------------------------------
 # Added to support the collectionobjects_anthropology domain schema extensions
@@ -235,3 +236,10 @@ movement-normalLocationLabel: Storage Location
 #Media
 media-isPrimaryLabel: Is primary
 media-approveForPublicLabel: Approve for public
+media-sortableIdentificationNumberLabel: Sortable Identification Number
+
+#ConditionCheck
+conditioncheck-sortableConditionCheckRefNumberLabel: Sortable Condition Check/Assessment Reference Number
+
+#ValuationControl
+valuationcontrol-sortableValuationcontrolRefNumberLabel: Sortable Valuation Control Reference Number
