@@ -1134,6 +1134,11 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("checkIDValue", "cspace.recordEditor", {
             container: "{recordEditor}.container"
         });
+
+        // OMCA Add sortable ID value
+        fluid.demands("addSortableIDValue", "cspace.recordEditor", {
+            container: "{recordEditor}.container"
+        });
         
         // Related records list demands
         fluid.demands("vocabularies", "cspace.sidebar", {

@@ -2038,7 +2038,6 @@ fluid.registerNamespace("cspace.util");
         };
     };
 
-
     // OMCA Check validity of ID value
     fluid.defaults("cspace.util.checkIDValues", {
         gradeNames: ["fluid.viewComponent"],
@@ -2083,9 +2082,10 @@ fluid.registerNamespace("cspace.util");
 
             // Add event handler when input field value changes
             $(".csc-object-identification-object-number").change(function() {
-                updatedIDValue = $(currentIDValueElem).val();
+                var updatedIDValue = $(currentIDValueElem).val();
                 console.log("checkIDValue updated: " + updatedIDValue);
 
+                // Check to see if updatedIDValue already exists
                 if (updatedIDValue && updatedIDValue != "" && updatedIDValue.length){
                     $.ajax({
                         url: url,
@@ -2098,11 +2098,65 @@ fluid.registerNamespace("cspace.util");
                         console.log("error retrieving data");
                     });
                 }
+
             });
         }
 
         console.log("checkIDValue done.");
         return that;
+    };
+
+    // OMCA Add sortable ID value
+    fluid.defaults("cspace.util.addSortableIDValues", {
+        gradeNames: ["fluid.viewComponent"],
+        selectors: {
+            currentIDField: ".id-container input",
+            currentSortableIDField: ".sortableID-container input"
+        }
+    });
+    cspace.util.addSortableIDValues = function(container, options) {
+        var that = fluid.initView("cspace.util.addSortableIDValues", container, options);
+        var currentIDElem = that.locate("currentIDField");
+        var currentSortableIDElem = that.locate("currentSortableIDField");
+
+        var zeroPad = function(str, len){
+            if (str.length >= len) {
+                return (str);
+            }
+            
+            return (new Array(len + 1).join('0') + str).slice(-len);
+        };
+
+        var isNumericRegExp = /^\d+$/;
+
+        var computeSortableObjectNumber = function(objectNumber) {
+            var parts = objectNumber.split('.');
+            var sortableParts = [];
+            
+            for (var i=0; i<parts.length; i++) {
+                var part = parts[i];
+                
+                if (isNumericRegExp.test(part)) {
+                    part = zeroPad(part, 5);
+                }
+                else {
+                    part = part.toLowerCase();
+                }
+                
+                sortableParts.push(part);
+            }
+            
+            return sortableParts.join(' ');
+        }
+
+        // Add event handler when ID field value changes
+        $(currentIDElem).change(function() {
+            var updatedIDValue = $(currentIDElem).val();
+            var sortableIDValue = computeSortableObjectNumber(updatedIDValue);
+            //console.log("current object number: " + sortableIDValue);
+            $(currentSortableIDElem).val(sortableIDValue).change();
+            console.log("sortable object value: " + $(currentSortableIDElem).val());
+        });
     };
 
     
