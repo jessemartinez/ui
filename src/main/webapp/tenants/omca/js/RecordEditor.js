@@ -185,18 +185,6 @@ cspace = cspace || {};
                 createOnEvent: "afterRecordRender"
             },
 
-            // OMCA Add sortable ID value
-            addSortableIDValue: {
-                type: "cspace.util.addSortableIDValues",
-                options: {
-                    selectors: {
-                        currentIDField: "{cspace.recordEditor}.options.selectors.currentIDField",
-                        currentSortableIDField: "{cspace.recordEditor}.options.selectors.currentSortableIDField"
-                    }
-                },
-                createOnEvent: "afterRecordRender"
-            },
-
             // Component that applies read only styling for all of record
             // editor.
             readOnly: {

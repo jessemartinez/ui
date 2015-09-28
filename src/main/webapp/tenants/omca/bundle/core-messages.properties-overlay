@@ -33,6 +33,8 @@ login-loginPasswordInstructions: Password must be between 8 and 24 characters.
 login-loginNewPasswordLabel: New Password
 login-loginConfirmPasswordLabel: Confirm Password
 login-submitNewPassword: Reset
+errorCalculating: %labelError calculating field value: %status
+invalidCalculatedNumber: The calculated value is not a valid number.
 
 # Vocabularies
 vocab-common_ta: Common Taxa

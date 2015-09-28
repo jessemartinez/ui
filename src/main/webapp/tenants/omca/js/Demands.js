@@ -1134,11 +1134,6 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("checkIDValue", "cspace.recordEditor", {
             container: "{recordEditor}.container"
         });
-
-        // OMCA Add sortable ID value
-        fluid.demands("addSortableIDValue", "cspace.recordEditor", {
-            container: "{recordEditor}.container"
-        });
         
         // Related records list demands
         fluid.demands("vocabularies", "cspace.sidebar", {
@@ -1941,6 +1936,66 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
             }
         });
     };
+
+    // computedField demands
+    fluid.demands("cspace.computedField", "cspace.recordEditor", {
+        container: "{arguments}.0",
+        mergeAllOptions: [{
+            applier: "{recordEditor}.applier",
+            model: "{recordEditor}.model",
+            events: {
+                removeApplierListeners: "{recordEditor}.events.onRenderTree",
+                onSubmit: "{recordEditor}.saver.events.beforeSave",
+                recordEditorAfterSave: "{recordEditor}.events.afterSave",
+                recordEditorAfterCancel: "{recordEditor}.events.afterCancel"
+            },
+            listeners: {
+                recordEditorAfterSave: {
+                    listener: "{computedField}.events.removeAllListeners.fire",
+                    priority: "first"
+                },
+                recordEditorAfterCancel: {
+                    listener: "{computedField}.events.removeAllListeners.fire"
+                }
+            }
+        }, "{arguments}.1"]
+    });
+    fluid.demands("cspace.computedField", ["cspace.repeatableImpl", "cspace.makeRepeatable", "cspace.recordEditor"], {
+        container: "{arguments}.0",
+        mergeAllOptions: [{
+            applier: "{repeatableImpl}.applier",
+            model: "{repeatableImpl}.model",
+            events: {
+                repeatableOnRefreshView: "{repeatableImpl}.events.onRefreshView",
+                recordEditorOnRenderTree: "{recordEditor}.events.onRenderTree",
+                onSubmit: "{recordEditor}.saver.events.beforeSave",
+                recordEditorAfterSave: "{recordEditor}.events.afterSave",
+                recordEditorAfterCancel: "{recordEditor}.events.afterCancel"
+            },
+            listeners: {
+                repeatableOnRefreshView: "{computedField}.events.removeAllListeners.fire",
+                recordEditorOnRenderTree: "{computedField}.events.removeAllListeners.fire",
+                recordEditorAfterSave: {
+                    listener: "{computedField}.events.removeAllListeners.fire",
+                    priority: "first"
+                },
+                recordEditorAfterCancel: {
+                    listener: "{computedField}.events.removeAllListeners.fire"
+                }
+           }
+        }, "{arguments}.1"]
+    });
+    fluid.demands("cspace.computedField", "cspace.advancedSearch.searchFields", {
+        container: "{arguments}.0",
+        mergeAllOptions: [{
+            applier: "{searchFields}.applier",
+            model: "{searchFields}.model",
+            events: {
+                removeAllListeners: "{advancedSearch}.events.recordTypeChanged",
+                onSubmit: "{searchView}.events.onAdvancedSearch"
+            },
+        }, "{arguments}.1"]
+    });
     
     fluid.demands("cspace.localDemands", "cspace.localData", {
         options: {
