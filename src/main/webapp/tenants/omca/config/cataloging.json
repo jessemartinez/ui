@@ -1,0 +1,71 @@
+{
+    "pageBuilder": {
+        "options": {
+            "pageType": "cataloging",
+            "components": {
+                "recordEditor": {
+                    "type":  "cspace.recordEditor",
+                    "options": {
+                        "selectors": {
+                            "identificationNumber": ".csc-object-identification-object-number" 
+                        },
+                        "uispec": "{pageBuilder}.options.uispec.recordEditor",
+                        "fieldsToIgnore": ["csid", "fields.csid", "fields.createdAt", "fields.createdBy", "fields.updatedAt", "fields.updatedBy", "fields.objectNumber", "fields.narrowerContexts", "fields.computedCurrentLocation"]
+                    }
+                },
+                "titleBar": {
+                    "type": "cspace.titleBar",
+                    "options": {
+                        "fields": [
+                            "fields.objectNumber", {
+                            "type": "repeatableMatch",
+                            "queryPath": "fields.titleGroup",
+                            "childPath": "_primary",
+                            "value": true,
+                            "path": "title"
+                        },{
+                            "type": "repeatableMatch",
+                            "queryPath": "fields.objectNameGroup",
+                            "childPath": "_primary",
+                            "value": true,
+                            "path": "objectName"
+                        },{
+                            "type": "repeatableMatch",
+                            "queryPath": "fields.determinationHistoryGroup",
+                            "childPath": "_primary",
+                            "value": true,
+                            "path": "dhName"
+                        },{
+                            "type": "repeatableMatch",
+                            "queryPath": "fields.objectProductionPersonGroup",
+                            "childPath": "_primary",
+                            "value": true,
+                            "path": "objectProductionPerson"
+                        }]
+                    }
+                },
+                "header": {
+                    "type": "cspace.header",
+                    "options": {
+                        "schema": "{pageBuilder}.schema",
+                        "permissions": "{pageBuilder}.permissions"
+                    }
+                },
+                "tabs": {
+                    "type": "cspace.tabs"
+                },
+                "sidebar": {
+                    "type": "cspace.sidebar"
+                }
+            }
+        }
+    },
+    "pageBuilderIO": {
+        "options": {
+            "recordType": "cataloging",
+            "schema": {
+                "cataloging": null
+            }
+        }
+    }
+}

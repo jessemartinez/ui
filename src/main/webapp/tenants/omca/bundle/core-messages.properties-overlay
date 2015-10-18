@@ -1,0 +1,247 @@
+#Login
+login-allFieldsRequired: All fields must be filled in
+login-emailRequired: You must enter a valid email address
+login-passwordsMustMatch: Passwords must match
+login-invalid: Invalid email/password combination
+login-generalError: We are sorry, an error has occurred. Please try again, or contact your system administrator.
+login-current: Oakland Museum of California CollectionSpace Login
+login-current-info:
+login-current-details: Please log in with your museumca.org credentials. 
+login-login-info: 
+login-login:
+login-login-pwd:
+login-login-pwdValue:
+login-rologin-info:
+login-rologin:
+login-rologin-pwd: 
+login-rologin-pwdValue:
+login-footerFirst:
+login-footerLink:
+login-footerLast:
+login-header: Sign In
+login-email-label: Email
+login-password-label: Password
+login-loginButton: Sign In
+login-forgot: Forgot Password?\t
+login-reset-label: Click here to reset password.
+login-reset-header: Reset password
+login-enterEmailMessage: Please enter the email address associated with your account.
+login-submitEmail: Reset My Password
+login-loginBack: Back to Sign In page
+login-loginNewPasswordNote: Enter the new password for\t
+login-loginPasswordInstructions: Password must be between 8 and 24 characters.
+login-loginNewPasswordLabel: New Password
+login-loginConfirmPasswordLabel: Confirm Password
+login-submitNewPassword: Reset
+errorCalculating: %labelError calculating field value: %status
+invalidCalculatedNumber: The calculated value is not a valid number.
+
+# Vocabularies
+vocab-common_ta: Common Taxa
+vocab-taxon: Local Taxa
+
+#Citation
+citation-publicationTypeLabel: Publication Type
+
+#Place
+place-legacyArgusNotesLabel: Legacy Argus Notes
+place-legacyParentsLabel: Legacy Parents
+place-legacySeeAlsoLabel: Legacy See Also
+
+#Concept
+concept-legacyArgusNotesLabel: Legacy Argus Notes
+concept-legacyParentsLabel: Legacy Parents
+concept-legacySeeAlsoLabel: Legacy See Also
+
+#Person
+person-activeDatesGroupLabel: Active Dates
+person-workLocationLabel: Work Location
+person-personsSpecialtiesLabel: Person's Specialties
+person-personsSpecialtyLabel: Person's Specialty
+person-legacyParentsLabel: Legacy Parents
+person-legacySeeAlsoLabel: Legacy See Also
+
+#Organization
+organization-dissolutionDateGroupLabel: Active Dates
+organization-legacyArgusNotesLabel: Legacy Argus Notes
+organization-legacyParentsLabel: Legacy Parents
+organization-legacySeeAlsoLabel: Legacy See Also
+
+#Contact
+contact-addressTypeOMCALabel: Type
+contact-addressPostCodeOMCALabel: Postal Code
+contact-addressMunicipalityOMCALabel: Municipality
+contact-addressGroupOMCALabel: Address
+contact-addressPlace1OMCALabel: Line 1
+contact-addressStateOrProvinceOMCALabel: State/Province
+contact-addressPlace2OMCALabel: Line 2
+contact-addressCountryOMCALabel: Country
+contact-addressNoteOMCALabel: Note
+
+
+# Taxon record
+taxon: Taxon
+taxon-identificationNumberRequired: Please specify a Display Name
+taxon-taxonNameAuthorityInformationLabel: Taxonomic Name Authority Information
+preferredTA-termDisplayNameLabel: Display Name
+preferredTA-termNameLabel: Term
+preferredTA-termQualifierLabel: Qualifier
+preferredTA-termStatusLabel: Term Status
+preferredTA-termTypeLabel: Term Type
+preferredTA-termLanguageLabel: Language
+preferredTA-termPrefForLangLabel: Pref for Lang
+preferredTA-termSourceLabel: Source
+preferredTA-termSourceDetailLabel: Source Detail
+preferredTA-termSourceIDLabel: Source ID
+preferredTA-termSourceNoteLabel: Source Note
+preferredTA-termFormattedDisplayNameLabel: Formatted Display Name
+preferredTA-taxonomicStatusLabel: Taxonomic Status
+taxon-taxonRankLabel: Rank
+taxon-taxonCurrencyLabel: Currency
+taxon-taxonAuthorGroupLabel: Author
+taxon-taxonAuthorLabel: Author
+taxon-taxonAuthorTypeLabel: Author Type
+taxon-taxonYearLabel: Year
+taxon-taxonIsNamedHybridLabel: Is Named Hybrid
+taxon-taxonCitationLabel: Citations
+taxon-taxonNoteLabel: Note
+taxon-commonNameGroupLabel: Common Name
+taxon-commonNameLabel: Common Name
+taxon-commonNameLanguageLabel: Language
+taxon-commonNameSourceLabel: Source
+taxon-commonNameSourceDetailLabel: Source Detail
+taxon-updatedByLabel: Record last modified by
+taxon-updatedAtLabel: Modified Date
+taxon-updatedAtStartLabel: Earliest
+taxon-updatedAtEndLabel: Latest
+taxon-preferredTaxonLabel: Taxon Term Group(s)
+taxon-miniView-field1Label: Term Type:
+taxon-miniView-field2Label: Term Status:
+taxon-miniView-field3Label: Rank:
+taxon-legacyArgusNotesLabel: Legacy Argus Notes
+taxon-legacyParentsLabel: Legacy Parents
+taxon-legacySeeAlsoLabel: Legacy See Also
+
+#Location
+location-accessNoteLabel: Note
+
+#Acquisition
+acquisition-sortableAcquisitionReferenceNumberLabel: Sortable Acquisition Reference Number
+acquisition-contactGroupLabel: Contact
+acquisition-contactLabel: Contact
+acquisition-contactRoleLabel: Contact role
+acquisition-sourceContactNoteLabel: Source/Contact Note
+acquisition-accessionDescriptionLabel: Accession Description
+acquisition-anonymousLabel: Anonymous
+
+#Intake
+intake-normalLocationLabel: Storage Location
+intake-sortableEntryNumberLabel: Sortable Entry Number
+intake-estimatedValueLabel: Estimated Value
+intake-depositorOMCAGroupLabel: Depositors
+intake-depositorOMCALabel: Depositor
+intake-depositorsRequirementsOMCALabel: Depositor Requirements
+
+#Cataloging
+collection-object-textualInscriptionInformationLabel: Inscription
+collection-object-distinguishingFeaturesLabel: Curatorial Remarks
+collection-object-commentsLabel: Inhouse Notes
+collection-object-argusCountLabel: Argus count
+collection-object-categoriesLabel: Categories
+collection-object-categoryLabel: Category
+collection-object-artLabel: Art
+collection-object-historyLabel: History
+collection-object-scienceLabel: Science
+collection-object-publishedOnWebLabel: Published on the Web
+collection-object-photosLabel: Photos
+collection-object-photoLabel: Photo
+collection-object-determinationHistoryGroupLabel: Determination History
+collection-object-determinationHistoryGroupListLabel: Determination History
+collection-object-dhNameLabel: Name
+collection-object-dhQualifierLabel: Quantifier
+collection-object-identByLabel: By
+collection-object-identDateLabel: Date
+collection-object-institutionLabel: Institution
+collection-object-identKindLabel: Kind
+collection-object-dhReferenceLabel: Reference
+collection-object-dhPageLabel: Page
+collection-object-dhNotesLabel: Notes
+collection-object-argusDescriptionLabel: Argus Description
+collection-object-accessoryLabel: Accessory
+collection-object-argusRemarksLabel: Argus Remarks
+collection-object-argusSubjectLabel: Argus Subject
+collection-object-argusMadeLabel: Argus Made
+collection-object-argusFoundAndUsedLabel: Argus Found and Used
+collection-object-exhibitionHistoryLabel: Exhibition History
+
+collection-object-viewerContributionGroupLabel: Object Viewers Contribution
+collection-object-viewerNameLabel: Viewer's Name
+collection-object-viewerRoleLabel: Viewer's Role
+collection-object-viewerContributionLabel: Viewer's Contribution
+collection-object-viewerContributionDateLabel: Date of Completion
+collection-object-viewerReferencesLabel: Viewer's References
+collection-object-viewerReferenceLabel: Viewer's Reference
+collection-object-viewerContributionNoteLabel: Viewer's Contribution Note
+collection-object-sortableObjectNumberLabel: Sortable Identification Number
+
+# ------------------------------------------------------------
+# Added to support the collectionobjects_anthropology domain schema extensions
+# ******************* Cataloging ******************* #
+collection-object-repatriationNagpraComplianceInformationLabel: Repatriation and NAGPRA Compliance Information
+collection-object-nagpraInventoryNameLabel: NAGPRA inventory
+collection-object-nagpraApplicabilityLabel: Museum's NAGPRA category det.
+collection-object-nagpraCulturalDeterminationLabel: NAGPRA cultural determination
+collection-object-repatriationNoteLabel: Repatriation note
+
+collection-object-repatriationClaimGroupLabel: Claims made for object
+collection-object-repatriationClaimNameLabel: Name of claim
+collection-object-repatriationClaimStatusLabel: Status
+collection-object-repatriationClaimClaimantLabel: Claimant
+collection-object-repatriationClaimNoteLabel: Note
+collection-object-repatriationClaimDateLabel: Date
+
+collection-object-culturalCareInformationLabel: Cultural Care Information
+collection-object-accessRestrictionGroupLabel: Access limitations
+collection-object-accessRestrictionTypeLabel: Type
+collection-object-accessRestrictionLevelLabel: Level
+collection-object-accessRestrictionDetailsLabel: Details
+collection-object-accessRestrictionRequestorLabel: Requestor (person)
+collection-object-accessRestrictionOnBehalfOfLabel: On behalf of (organization)
+collection-object-accessRestrictionDateLabel: Date
+              
+collection-object-culturalCareNoteLabel: Cultural care notes
+collection-object-computedCurrentLocationLabel: Current storage location
+collection-object-computedCurrentLocationSearchLabel: Current storage location
+collection-object-computedCrateLabel: Current box or container
+collection-object-computedCrateSearchLabel: Current box or container
+# ------------------------------------------------------------
+
+#LoanIn
+loanin-borrowersContactLabel: OMCA Contact
+loanin-borrowersAuthorizerLabel: OMCA Authorizer
+loanin-borrowersAuthorizationDateLabel: OMCA Authorization Date
+loanin-sortableLoanInNumberLabel: Sortable Loan In Number
+loanin-creditLineLabel: Credit Line
+loanin-anonymousLabel: Anonymous
+loanin-lenderNoteLabel: Lender Note
+
+#LoanOut
+loanout-sortableLoanOutNumberLabel: Sortable Loan Out Number
+
+#Object Exit
+objectexit-depositorLabel: Recipient
+objectexit-sortableExitNumberLabel: Sortable Exit Number
+
+#Movement
+movement-normalLocationLabel: Storage Location
+
+#Media
+media-isPrimaryLabel: Is primary
+media-approveForPublicLabel: Approve for public
+media-sortableIdentificationNumberLabel: Sortable Identification Number
+
+#ConditionCheck
+conditioncheck-sortableConditionCheckRefNumberLabel: Sortable Condition Check/Assessment Reference Number
+
+#ValuationControl
+valuationcontrol-sortableValuationcontrolRefNumberLabel: Sortable Valuation Control Reference Number

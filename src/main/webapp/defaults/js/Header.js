@@ -41,10 +41,10 @@ cspace = cspace || {};
             // List of items in the top level tab menu (resolved with
             // permissions).
             menuitems: [
-            {
-                messagekey: "menuItems-myCollectionSpace",
-                href: "myCollectionSpace.html"
-            },
+            //{
+            //    messagekey: "menuItems-myCollectionSpace",
+            //    href: "myCollectionSpace.html"
+            //},
             {
                 messagekey: "menuItems-createNew",
                 href: "createnew.html",
