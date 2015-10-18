@@ -19,22 +19,28 @@
                         "fields": [
                             "fields.objectNumber", {
                             "type": "repeatableMatch",
-                            "queryPath": "fields.objectNameGroup",
-                            "childPath": "_primary",
-                            "value": true,
-                            "path": "objectName"
-                        },{
-                            "type": "repeatableMatch",
                             "queryPath": "fields.titleGroup",
                             "childPath": "_primary",
                             "value": true,
                             "path": "title"
                         },{
                             "type": "repeatableMatch",
+                            "queryPath": "fields.objectNameGroup",
+                            "childPath": "_primary",
+                            "value": true,
+                            "path": "objectName"
+                        },{
+                            "type": "repeatableMatch",
                             "queryPath": "fields.determinationHistoryGroup",
                             "childPath": "_primary",
                             "value": true,
                             "path": "dhName"
+                        },{
+                            "type": "repeatableMatch",
+                            "queryPath": "fields.objectProductionPersonGroup",
+                            "childPath": "_primary",
+                            "value": true,
+                            "path": "objectProductionPerson"
                         }]
                     }
                 },
