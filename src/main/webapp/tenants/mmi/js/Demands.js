@@ -443,12 +443,12 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                         decorators: {
                             type: "fluid",
                             func: "cspace.util.urnToStringFieldConverter"
-                    	}
+                        }
                     },
                     broaderContextLabel: {
                         messagekey: "autocomplete-popup-miniView-broaderContextLabel"
-                	}
-            	}
+                    }
+                }
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "concept-miniView"], {
@@ -463,12 +463,12 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                         decorators: {
                             type: "fluid",
                             func: "cspace.util.urnToStringFieldConverter"
-                    	}
+                        }
                     },
                     broaderContextLabel: {
                         messagekey: "autocomplete-popup-miniView-broaderContextLabel"
-                	}
-				}
+                    }
+                }
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "place-miniView"], {
@@ -487,8 +487,8 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     },
                     broaderContextLabel: {
                         messagekey: "autocomplete-popup-miniView-broaderContextLabel"
-                	}
-            	}
+                    }
+                }
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "citation-miniView"], {
@@ -503,12 +503,12 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                         decorators: {
                             type: "fluid",
                             func: "cspace.util.urnToStringFieldConverter"
-                    	}
+                        }
                     },
                     broaderContextLabel: {
                         messagekey: "autocomplete-popup-miniView-broaderContextLabel"
-                	}
-            	}
+                    }
+                }
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "taxon-miniView"], {
@@ -555,12 +555,12 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                         decorators: {
                             type: "fluid",
                             func: "cspace.util.urnToStringFieldConverter"
-                    	}
+                        }
                     },
                     broaderContextLabel: {
                         messagekey: "autocomplete-popup-miniView-broaderContextLabel"
-                	}
-            	}
+                    }
+                }
             }
         });
         fluid.demands("cspace.autocomplete.popup.miniView.renderer", ["cspace.autocomplete.popup.miniView", "material-miniView"], {
@@ -603,13 +603,13 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                         decorators: {
                             type: "fluid",
                             func: "cspace.util.urnToStringFieldConverter"
-                    	}
+                        }
                     },
                     broaderContextLabel: {
                         messagekey: "autocomplete-popup-miniView-broaderContextLabel"
-                	}
-            	}
-			}
+                    }
+                }
+            }
         });
         var authDataSourceDemands = {
             funcName: "cspace.URLDataSource",
@@ -1426,6 +1426,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
             }, "{arguments}.1"]
         });
         
+        // BEGIN MMI CUSTOMIZATION
         // Work Structured date demands
         fluid.demands("cspace.workStructuredDate", "cspace.recordEditor", {
             container: "{arguments}.0",
@@ -1454,7 +1455,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
             }, "{arguments}.1"]
         });
         
-        // Person  Structured date demands
+        // Person  Structured date demands - MMI
         fluid.demands("cspace.personStructuredDate", "cspace.recordEditor", {
             container: "{arguments}.0",
             mergeAllOptions: [{
@@ -1482,7 +1483,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
             }, "{arguments}.1"]
         });
         
-        // Cataloging Structured date demands
+        // Cataloging Structured date demands - MMI
         fluid.demands("cspace.catalogingStructuredDate", "cspace.recordEditor", {
             container: "{arguments}.0",
             mergeAllOptions: [{
@@ -1509,7 +1510,8 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                 }
             }, "{arguments}.1"]
         });
-		
+        // END MMI CUSTOMIZATION
+        
         // searchView demands
         fluid.demands("fluid.pager", "cspace.search.searchView", ["{searchView}.dom.resultsContainer", fluid.COMPONENT_OPTIONS]);
         fluid.demands("search", "cspace.searchToRelateDialog", {
@@ -1699,7 +1701,7 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                                 afterToggle: "{searchView}.events.hideResults"
                             },
                             listeners: {
-                            	afterSearchFieldsInit: "{loadingIndicator}.events.hideOn.fire",
+                                afterSearchFieldsInit: "{loadingIndicator}.events.hideOn.fire",
                                 recordTypeChanged: "{loadingIndicator}.events.showOn.fire",
                                 onSearch: {
                                     listener: "{searchTools}.events.renderOn.fire",

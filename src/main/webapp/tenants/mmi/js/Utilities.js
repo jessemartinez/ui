@@ -369,6 +369,7 @@ fluid.registerNamespace("cspace.util");
         };
     };
 
+    // BEING MMI CUSTOMIZATION
     cspace.util.initWorkType = function(mySelected){
         var myWT = $(".csc-object-identification-workType");
         //add in terms that match
@@ -465,6 +466,7 @@ fluid.registerNamespace("cspace.util");
             }).attr("selected", "selected");
         }   
     }
+    // END MMI CUSTOMIZATION
 	
     cspace.util.getDefaultConfigURL = function (options) {
         var that = fluid.initLittleComponent("cspace.util.getDefaultConfigURL", options);

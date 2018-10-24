@@ -29,9 +29,9 @@ login-footerFirst:
 login-footerLink:
 login-footerLast:
 
-footer-text1: 2009 - 2016
+footer-text1: 2009 - 2018
 footer-currentRelease: Resources
-footer-feedback: LYRASIS support
+footer-feedback: Museum of the Moving Image
 
 #Acquisition
 acquisition-acquisitionExtentLabel: Extent
@@ -88,6 +88,7 @@ collection-object-contentEntityLabel: Content - Entity
 collection-object-contentEntityTypeLabel: Content - Entity Type
 collection-object-contentEntityNoteLabel: Content - Entity Note
 collection-object-contentWorkGroupLabel: Content - Works
+collection-object-mmiContentWorkGroupLabel: Content - Works
 collection-object-contentWorkLabel: Content - Work
 collection-object-contentWorkTypeLabel: Content - Work Type
 collection-object-contentWorkNoteLabel: Content - Work Note

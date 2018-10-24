@@ -65,9 +65,9 @@ cspace = cspace || {};
             feedback: ".csc-footer-feedback"
         },
         model: {
-            about: "http://www.lyrasis.org/LYRASIS%20Digital/Pages/CollectionSpace.aspx",
+            about: "http://www.collectionspace.org",
             currentRelease: "http://wiki.collectionspace.org/display/collectionspace/Resources",
-            feedback: "https://lyrasis.zendesk.com/hc",
+            feedback: "http://movingimage.us",
             version: "4.1.1"
         },
         // Footer template resource.
