@@ -127,7 +127,15 @@ cspace = cspace || {};
                     });
                     return;
                 }
-                that.events.afterAddRelation.fire(options.related);
+                var targetRecordTypes = {};
+                
+                fluid.each(data.items, function(item) {
+                    targetRecordTypes[item.target.recordtype] = true;
+                });
+                
+                for (var targetRecordType in targetRecordTypes) {
+                    that.events.afterAddRelation.fire(targetRecordType);
+                }
             });
         };
         that.afterAddRelation = function () {
