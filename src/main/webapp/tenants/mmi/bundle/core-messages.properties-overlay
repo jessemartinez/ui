@@ -1,0 +1,139 @@
+#Login
+login-current: Museum of the Moving Image
+login-current-details: Please log in with the username and password provided by your system administrator.
+login-login-info:
+login-login:
+login-login-after:
+login-login-pwd:
+login-login-pwdValue:
+login-login-pwdValue-after:
+login-rologin-info:
+login-rologin:
+login-rologin-pwd:
+login-rologin-pwdValue:
+login-rologin-pwdValue-after:
+
+login-current-info-1:
+login-current-info-2:
+login-current-info-3:
+login-current-info-4:
+login-current-info-5:
+login-current-info-6:
+login-current-info-7:
+login-webcast-info:
+login-webcast-link-object:
+login-webcast-link-image:
+login-webcast-link-location:
+login-rebuild:
+login-footerFirst:
+login-footerLink:
+login-footerLast:
+
+footer-text1: 2009 - 2018
+footer-currentRelease: Resources
+footer-feedback: Museum of the Moving Image
+footer-text2:
+footer-currentRelease: Release 4.5
+footer-deploymentRelease:
+footer-about: About CollectionSpace
+footer-support:
+
+#Acquisition
+acquisition-acquisitionExtentLabel: Extent
+acquisition-mmiAccessionDateLabel: Accession Date
+acquisition-mmiAcquisitionDateLabel: Acquisition Date
+acquisition-acquisitionReasonLabel: Provenance
+acquisition-acquisitionNoteLabel: Acquisition description
+
+#Work
+preferredWork-termSourceDetailLabel: Indexing notes
+preferredWork-termSourceNoteLabel: History notes
+
+work-workHistoryNoteLabel: Scope notes
+work-scopeNoteLabel: Scope notes
+work-genreLabel: Genre
+work-mediumLabel: Medium
+work-migratedEntityGroupLabel: Migrated Entity
+work-migratedEntityLabel: Entity
+work-migratedEntityTypeLabel: Entity Type
+
+#Media
+media-isPrimaryLabel: Is Primary?
+media-isOriginalMediaLabel: Is Original Media?
+media-mediaStatusLabel: Status
+media-rightsHolderLabel: License
+media-descriptionLabel: Notes
+media-titleLabel: Caption
+media-mediaViewTypeLabel: View Type
+
+#Cataloging
+collection-object-administrativeRemarksLabel: Administrative Remarks
+collection-object-provenanceLabel: Provenance
+collection-object-initialCatalogingCompletedLabel: Initial cataloging completed
+collection-object-additionalResearchRequiredLabel: Additional research required
+collection-object-approvedByCuratorLabel: Approved by Curator
+collection-object-artifactClassLabel: Artifact class
+collection-object-workTypeLabel: Work type
+
+collection-object-objectTitleLabel: Object title
+collection-object-captionLabel: Caption
+collection-object-briefDescriptionLabel: Caption
+collection-object-distinguishingFeaturesLabel: Description
+collection-object-numberOfObjectsLabel: Extent
+collection-object-objectNameLabel: Artifact class / Work type
+
+collection-object-responsibleDepartmentLabel: Collection category
+
+collection-object-responsibleDepartmentsLabel: Collection category
+collection-object-responsible-departmentLabel: Collection category
+
+collection-object-contentLanguageLabel: Language
+collection-object-contentPlaceLabel: Place
+collection-object-contentEntityGroupLabel: Content - Entities
+collection-object-contentEntityLabel: Content - Entity
+collection-object-contentEntityTypeLabel: Content - Entity Type
+collection-object-contentEntityNoteLabel: Content - Entity Note
+collection-object-contentWorkGroupLabel: Content - Works
+collection-object-mmiContentWorkGroupLabel: Content - Works
+collection-object-contentWorkLabel: Content - Work
+collection-object-contentWorkTypeLabel: Content - Work Type
+collection-object-contentWorkNoteLabel: Content - Work Note
+collection-object-copyrightStatementsLabel: Copyright Statements
+collection-object-physicalDescriptionLabel: Format
+collection-object-objectProductionOrganizationLabel: Object production entity
+collection-object-objectProductionOrganizationRoleLabel: Object production entity - Role
+collection-object-objectProductionEntityNoteLabel: Object production entity - Note
+collection-object-assocOrganizationLabel: Associated Entity
+collection-object-assocOrganizationTypeLabel: Associated Entity Type
+collection-object-assocOrganizationNoteLabel: Associated Entity Note
+collection-object-objectHistoryNoteLabel: Historical Note
+
+collection-object-mmiMaterialLabel: Material
+object-description-mmiInscriptionContentLabel: Inscription content
+object-description-formatLabel: Format
+
+object-history-association-historicalNoteSourcesLabel: Historical Note Sources
+collection-object-assocOrganizationGroupLabel: Associated Entity
+object-production-mmiTechniqueLabel: Technique
+collection-object-objProdEntityGroupLabel: Production Entity
+
+vocab-person: Local Entity
+vocab-ulan_pa: ULAN Entity
+
+person: Entity
+person-personNameAuthorityInformationLabel: Entity Information
+
+preferredPA-surNameLabel: Surname / Entity Name
+person-birthDateGroupLabel: Birth / Founding Date
+person-deathDateGroupLabel: Death / Dissolution Date
+person-birthPlaceLabel: Place of Birth / Founding
+person-deathPlaceLabel: Place of Death / Dissolution
+
+person-affiliatedPersonOrgGroupLabel: Affiliated entity
+person-affiliatedPersonOrgLabel: Affiliated entity
+person-affiliatedPersonOrgTypeLabel: Affiliated entity type
+person-lifeSpanLabel: Life span
+
+person-orgContactNameLabel: Entity's contact name
+person-orgFunctionLabel: Function
+person-functionLabel: Function
