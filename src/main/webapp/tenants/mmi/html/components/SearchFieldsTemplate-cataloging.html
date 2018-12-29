@@ -64,15 +64,27 @@
                     </div>        
                 </div>
 
-                <!-- structured dates can't search by range yet-->
-                <!--div class="info-pair">
+                <div class="info-pair">
                     <div class="header">
-                        <div class="label cscx-collection-object-objectProductionDateGroup-label"></div>
+                        <div class="label csc-collection-object-objectProductionDate-label"></div>
                     </div>
                     <div class="content">
-                        <input type="text" class="cscx-objectProductionDateGroup-objectProductionDate" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td class="csc-collection-object-objectProductionDateStart-label"></td>
+                                    <td class="csc-collection-object-objectProductionDateEnd-label"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" class="csc-collection-object-objectProductionDateStart" /></td>
+                                    <td><input type="text" class="csc-collection-object-objectProductionDateEnd" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div-->
+                </div>
 
                 <div class="info-pair">
                     <div class="header">
@@ -131,6 +143,36 @@
                     </div>
                     <div class="content">
                          <input type="checkbox" class="csc-object-identification-approvedByCurator"/>
+                    </div>
+                </div>
+
+                <div class="info-pair">
+                    <div class="header">
+                        <div class="label csc-collection-object-updatedBy-label"></div>
+                    </div>
+                    <div class="content clearfix">
+                        <input type="text" class="csc-collection-object-updatedBy"/>
+                    </div>
+                </div>
+                <div class="info-pair">
+                    <div class="header">
+                        <div class="label csc-collection-object-updatedAt-label"></div>
+                    </div>
+                    <div class="content">
+                        <table>
+                            <thead>
+                            <tr>
+                                <td class="csc-collection-object-updatedAtStart-label"></td>
+                                <td class="csc-collection-object-updatedAtEnd-label"></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="text" class="csc-collection-object-updatedAtStart" /></td>
+                                <td><input type="text" class="csc-collection-object-updatedAtEnd" /></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

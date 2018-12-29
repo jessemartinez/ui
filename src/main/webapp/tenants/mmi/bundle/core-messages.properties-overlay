@@ -108,6 +108,11 @@ collection-object-assocOrganizationTypeLabel: Associated Entity Type
 collection-object-assocOrganizationNoteLabel: Associated Entity Note
 collection-object-objectHistoryNoteLabel: Historical Note
 
+collection-object-objectProductionDateGroupLabel: Production Date
+collection-object-objectProductionDateLabel: Production Date
+collection-object-objectProductionDateStartLabel: Earliest
+collection-object-objectProductionDateEndLabel: Latest
+
 collection-object-mmiMaterialLabel: Material
 object-description-mmiInscriptionContentLabel: Inscription content
 object-description-formatLabel: Format
