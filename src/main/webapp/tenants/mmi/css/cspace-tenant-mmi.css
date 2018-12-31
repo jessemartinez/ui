@@ -25,3 +25,14 @@ table#search-results thead tr th:nth-child(4),
 table#search-results tbody tr td:nth-child(4) {
     display: none;
 }
+
+.field-hint {
+    padding: 4px 8px;
+    font-weight: 600;
+    background-color: #cce5ff;
+    display: inline-block;
+    border: 1px solid #b8daff;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    color: #004085;
+}

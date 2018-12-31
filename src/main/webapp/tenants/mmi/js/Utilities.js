@@ -471,6 +471,24 @@ fluid.registerNamespace("cspace.util");
         }   
     }
 
+    /** This function checks to see if the computedCurrentLocation field should
+     * remain disabled or not. It is necessary to have this field as enabled
+     * in the advanced search page but not in the general Cataloging template.
+     *
+     * This method searches for the magic classname attached to the field, "notdisabled",
+     * in order to determine the field's diability status.
+     *
+     * returns boolean
+    */
+    cspace.util.checkToEnableComputedCurrentLocation = function(obj){
+        var markedAsEnabledClassName = "notdisabled";
+
+        if ( $.inArray(markedAsEnabledClassName, obj.container.prop("classList")) > -1 ) {
+            return false;
+        }
+        return true;
+    }
+
     //
     // END MMI CUSTOMIZATION
     //
@@ -914,7 +932,13 @@ fluid.registerNamespace("cspace.util");
         var that = fluid.initView("cspace.util.urnToStringFieldConverter", container, options);
         var func = that.container.val() ? "val" : "text";
         that.container[func](that.options.convert(that.container[func]()));
-        that.container.prop("disabled", true);
+
+        // MMI
+
+        // Check if we should enable the computedCurrentLocation field in the DOM.
+        // By default this field is disabled.
+        //that.container.prop("disabled", true);
+        that.container.prop("disabled", cspace.util.checkToEnableComputedCurrentLocation(that));
         return that;
     };
 
