@@ -142,3 +142,5 @@ person-lifeSpanLabel: Life span
 person-orgContactNameLabel: Entity's contact name
 person-orgFunctionLabel: Function
 person-functionLabel: Function
+
+loanin-loanInCreditLineLabel: Credit Line
