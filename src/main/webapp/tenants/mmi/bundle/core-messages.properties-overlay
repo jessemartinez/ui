@@ -145,3 +145,25 @@ person-orgFunctionLabel: Function
 person-functionLabel: Function
 
 loanin-loanInCreditLineLabel: Credit Line
+
+# Object Exit
+objectexit-deaccessionAndDisplosalInformationLabel: Deaccession And Disposal Information
+objectexit-displosalNewObjectNumberLabel: Disposal New Object Number
+objectexit-deacApprovalGroupLabel: Deaccession Approval Group
+objectexit-deaccessionApprovalGroupLabel: Deaccession Approval Group
+objectexit-deaccessionApprovalStatusLabel: Deaccession Approval Status
+objectexit-deaccessionApprovalDateLabel: Deaccession Approval Date
+objectexit-deaccessionAuthorizerLabel: Deaccession Authorizer
+objectexit-authorizationDateLabel: Authorization Date
+objectexit-deaccessionDateLabel: Deaccession Date
+objectexit-disposalDateLabel: Disposal Date
+objectexit-disposalMethodLabel: Disposal Method
+objectexit-displosalReasonLabel: Disposal Reason
+objectexit-displosalProvisosLabel: Disposal Provisos
+objectexit-disposalProposedRecipientLabel: Disposal Proposed Recipient
+objectexit-disposalRecipientLabel: Disposal Recipient
+objectexit-displosalNoteLabel: Disposal Note
+objectexit-disposalCurrencyLabel: Disposal Currency
+objectexit-displosalValueLabel: Disposal Value
+objectexit-groupDisposalCurrencyLabel: Group Disposal Currency
+objectexit-groupDisplosalValueLabel: Group Disposal Value
