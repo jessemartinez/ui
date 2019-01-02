@@ -167,3 +167,9 @@ objectexit-disposalCurrencyLabel: Disposal Currency
 objectexit-displosalValueLabel: Disposal Value
 objectexit-groupDisposalCurrencyLabel: Group Disposal Currency
 objectexit-groupDisplosalValueLabel: Group Disposal Value
+
+# Concept
+concept-additionalSourceGroupLabel: Additional Sources
+concept-additionalSourceDetailLabel: Additional Source Detail
+concept-additionalSourceIDLabel: Additional Source Detail Unique ID
+concept-additionalSourceLabel: Additional Source
