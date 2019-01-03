@@ -1109,6 +1109,14 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
             funcName: "cspace.recordEditor.hasRelations",
             args: "{recordEditor}"
         });
+        
+        //
+        // BEGIN MMI CUSTOMIZATION
+        // 
+
+        // appending model:pagerModel:{} settings here to automatically sort
+        // by updatedAt column, and bump up pageSize to 10 within the 
+        // various MyCollectionSpace record lists
         fluid.demands("cspace.listView", "cspace.myCollectionSpace", {
             options: {
                 listeners: {
@@ -1116,9 +1124,21 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
                     afterUpdate: "{loadingIndicator}.events.hideOn.fire",
                     ready: "{loadingIndicator}.events.hideOn.fire",
                     onError: "{loadingIndicator}.events.hideOn.fire"
+                },
+                model: {
+                    pagerModel: {
+                        pageSize: 10,
+                        sortDir: -1,
+                        sortKey: "summarylist.updatedAt"
+                    }
                 }
             }
         });
+
+        //
+        // END MMI CUSTOMIZATION
+        //
+
         fluid.demands("cspace.listView", ["cspace.admin", "cspace.termlist"], {
             options: fluid.COMPONENT_OPTIONS
         });
