@@ -173,3 +173,6 @@ concept-additionalSourceGroupLabel: Additional Sources
 concept-additionalSourceDetailLabel: Additional Source Detail
 concept-additionalSourceIDLabel: Additional Source Detail Unique ID
 concept-additionalSourceLabel: Additional Source
+
+# Exhibit
+exhibition-exhibitionObjectSeqNumLabel: Floor Plan ID
