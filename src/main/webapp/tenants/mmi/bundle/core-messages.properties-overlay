@@ -174,5 +174,18 @@ concept-additionalSourceDetailLabel: Additional Source Detail
 concept-additionalSourceIDLabel: Additional Source Detail Unique ID
 concept-additionalSourceLabel: Additional Source
 
-# Exhibit
+# Exhibition
 exhibition-exhibitionObjectSeqNumLabel: Floor Plan ID
+#exhibition-mmiExhibitionObjectInformationLabel: Exhibited Object Information
+exhibition-mmiExhibitionObjectGroupLabel: Object Checklist
+exhibition-mmiExhibitionObjectNumberLabel: Object
+exhibition-mmiExhibitionObjectNameLabel: Name
+exhibition-mmiExhibitionObjectTypeLabel: Type
+exhibition-mmiExhibitionObjectConsCheckDateLabel: Cons. Check
+exhibition-mmiExhibitionObjectConsTreatmentLabel: Cons. Treatment
+exhibition-mmiExhibitionObjectMountLabel: Mount?
+exhibition-mmiExhibitionObjectSectionLabel: Section
+exhibition-mmiExhibitionObjectCaseLabel: Case
+exhibition-mmiExhibitionObjectSeqNumLabel: Floor Plan ID
+exhibition-mmiExhibitionObjectRotationLabel: Rotation
+exhibition-mmiExhibitionObjectNoteLabel: Note
