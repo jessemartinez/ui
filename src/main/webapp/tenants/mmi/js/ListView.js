@@ -39,7 +39,7 @@ cspace = cspace || {};
             pagerModel: {
                 pageCount: 1,
                 pageIndex: 0,
-                pageSize: 5,
+                pageSize: 20,
                 sortDir: 1,
                 sortKey: "",
                 totalRange: 0
