@@ -189,3 +189,6 @@ exhibition-mmiExhibitionObjectCaseLabel: Case
 exhibition-mmiExhibitionObjectSeqNumLabel: Floor Plan ID
 exhibition-mmiExhibitionObjectRotationLabel: Rotation
 exhibition-mmiExhibitionObjectNoteLabel: Note
+
+# Conditioncheck
+conditioncheck-conditionCheckReasonExhibitionLabel: Loan In/Out Exhibition
