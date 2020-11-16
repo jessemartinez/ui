@@ -181,6 +181,21 @@ cspace = cspace || {};
                 },
                 createOnEvent: "afterRecordRender"
             },
+
+            //
+            // BEGIN MMI CUSTOMIZATION
+            //
+
+            conditionCheckReasonChecker: {
+                type: "cspace.util.conditionCheckReasonChecker",
+                options: {},
+                createOnEvent: "afterRecordRender"
+            },
+
+            //
+            // END MMI CUSTOMIZATION
+            //
+
             // Component that applies read only styling for all of record
             // editor.
             readOnly: {

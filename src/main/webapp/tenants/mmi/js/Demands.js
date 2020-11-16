@@ -1312,6 +1312,19 @@ https://source.collectionspace.org/collection-space/LICENSE.txt
         fluid.demands("recordEditorTogglable", "cspace.recordEditor", {
             container: "{recordEditor}.container"
         });
+
+        //
+        // BEGIN MMI CUSTOMIZATION
+        //
+
+        fluid.demands("conditionCheckReasonChecker", "cspace.recordEditor", {
+           container: "{recordEditor}.container"
+        });
+
+        //
+        // END MMI CUSTOMIZATION
+        //
+
         fluid.demands("togglable", "cspace.relatedRecordsTab", {
             container: "{relatedRecordsTab}.container"
         });

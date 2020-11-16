@@ -489,6 +489,68 @@ fluid.registerNamespace("cspace.util");
         return true;
     }
 
+    // Adjust the conditionCheckReasonExhibition field.
+    cspace.util.conditionCheckReasonCheckerDisableField = function(makeDisabled) {
+        if (typeof makeDisabled != "boolean") {
+            return false;
+        }
+
+        var myCCReasonExhibition = $(".csc-conditioncheck-conditionCheckReasonExhibition");
+
+        // if the status of the conditionCheckReasonExhibition field is already the same
+        // as the makeDisabled then we don't have anything to do!
+        var myCurrentDisabledStatus = myCCReasonExhibition.is(":disabled");
+        if (myCurrentDisabledStatus === makeDisabled) {
+            return true;
+        }
+
+        // reset the value of the conditionCheckReasonExhibition field only if the
+        // current value is non-empty
+        var myCCReasonExhibitionValue = $.trim( $(myCCReasonExhibition).val() );
+        if (myCCReasonExhibitionValue.length > 0) {
+            $(myCCReasonExhibition).val("").change();
+        }
+
+        // update the field's 'disabled' property value
+        $(myCCReasonExhibition).prop("disabled", makeDisabled);
+
+        return true;
+    }
+
+    // Check if the conditionCheckReason field matches a specific set of values.
+    cspace.util.conditionCheckReasonCheckerMatch = function(term) {
+        var matchValues = ["loanin", "loanout"];
+        var makeDisabled =  true;
+
+        if ( $.inArray(term, matchValues) > -1 ) {
+            makeDisabled = false;
+        }
+
+        cspace.util.conditionCheckReasonCheckerDisableField(makeDisabled);
+
+        return true;
+    }
+
+    // Capture anytime the conditionCheckReason field updates.
+    // We are interested in only allowing the corresponding conditionCheckReasonExhibition
+    // field to be active when the conditionCheckReason field is set to a specific set of values.
+    cspace.util.conditionCheckReasonChecker = function() {
+        var myCCReason = $(".csc-conditioncheck-conditionCheckReason");
+        var myCCReasonSelected = $(myCCReason).find("option:selected").val();
+
+        // check if the selected value in the conditionCheckReason field matches a set of values
+        // and adjust the conditionCheckReasonExibition field accordingly
+        cspace.util.conditionCheckReasonCheckerMatch(myCCReasonSelected);
+
+        // run anytime the conditionCheckReason field changes
+        $(myCCReason).bind("change", function(){
+            myCCReasonSelected = $(this).find("option:selected").val();
+            cspace.util.conditionCheckReasonCheckerMatch(myCCReasonSelected);
+        });
+
+	return true;
+    }
+
     //
     // END MMI CUSTOMIZATION
     //
